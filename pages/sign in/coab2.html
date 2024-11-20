@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Nama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="text"].error {
+            border-color: red; /* Mengubah warna border menjadi merah jika ada kesalahan */
+        }
+
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h2>Masukkan Nama Anda</h2>
+    <form>
+        <input type="text" placeholder="Masukkan nama" required />
+        <input type="submit" value="Kirim" />
+    </form>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const nameInput = document.querySelector('input[type="text"]');
+
+            // Cek apakah input sesuai dengan pola
+            if (!nameInput.value.match(/^([A-Z][a-z]*)( [A-Z][a-z]*)*$/)) {
+                nameInput.classList.add('error'); // Tambahkan kelas error untuk menyoroti input
+                event.preventDefault(); // Mencegah form dikirim
+            } else {
+                nameInput.classList.remove('error'); // Hapus kelas error jika input valid
+            }
+        });
+    </script>
+</body>
+</html>
