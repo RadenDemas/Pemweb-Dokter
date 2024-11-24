@@ -10,6 +10,7 @@
             $user = mysqli_fetch_assoc($result);
             if($user['password'] === $pass){
                 var_dump($user);
+                $_SESSION['login'] = true;
                 $_SESSION['nama'] = $user['nama'];                
                 $_SESSION['id'] = $user['id'];
                 header("Location: index.php");

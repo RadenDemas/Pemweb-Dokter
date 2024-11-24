@@ -1,11 +1,12 @@
 <?php
     session_start();
-    if(!isset($_SESSION)){
+    if(!($_SESSION['login'] === true)){
         header("Location:login.php");
     }
     if(isset($_POST['logout'])){
         header("Location:kill.php");
     }
+    var_dump($_SESSION)
 ?>
 
 <!doctype html>
