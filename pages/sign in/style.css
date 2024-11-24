@@ -18,8 +18,8 @@ body {
     padding: 40px;
 }
 
-.left-side-sign-in, .left-side-sign-up, .right-side-sign-in, .right-side-sign-up, .input-group, label, input, select, button, p, a {
-    font-family: 'Poppins', sans-serif; 
+.left-side-sign-in, .right-side-sign-in, .input-group, label, input, button, p, a {
+    font-family: 'Poppins', sans-serif;
 }
 
 .left-side-sign-in {
@@ -38,35 +38,6 @@ body {
     left: 10px;
     width: 620px;
     height: auto;
-}
-
-.left-side-sign-up {
-    background-color: #F8F5F5;
-    border-radius: 0px 80px 80px 0px;
-    width: 47%;
-    height: 120%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.left-side-sign-up h1 {
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.left-side-sign-up form {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    align-items: center;
 }
 
 .right-side-sign-in {
@@ -98,23 +69,6 @@ body {
     text-align: center;
 }
 
-.right-side-sign-up {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-}
-
-.right-side-sign-up img {
-    width: 620px;
-    top: 65px;
-    left: 485px;
-    height: auto;
-    position: absolute;
-}
-
 .input-group {
     width: 100%;
     height: 50px;
@@ -137,7 +91,7 @@ label {
     margin-right: 0.5rem;
 }
 
-input, select {
+input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -165,22 +119,6 @@ input.error {
     border-radius: 30px;
     cursor: pointer;
     margin: 3rem 0;
-    transition: background-color 0.3s;
-}
-
-.signup-btn {
-    display: block;
-    width: 100px;
-    padding: 5px;
-    background-color: #8ab9d5;
-    color: black;
-    font-size: 1rem;
-    font-weight: normal;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    text-align: center;
-    margin: 30px auto;
     transition: background-color 0.3s;
 }
 
