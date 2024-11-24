@@ -5,11 +5,11 @@
         $email = $_POST['email'];
         $nohp = $_POST['nohp'];
         $gender = $_POST['gender'];
-        $ttl = $_POST['tempat'] . $_POST['tanggal'];
+        $ttl = $_POST['tempat'] .",". $_POST['tanggal'];
         $password = $_POST['password'];
 
         $query = "INSERT INTO users VALUES
-        ('','$nama','$email','$nohp','$gender','$ttl','$password','user')";
+        ('','$nama','$email','$nohp','$gender','$ttl','$password')";
         mysqli_query($conn,$query);
         header("Location:login.php");
         exit();
@@ -52,7 +52,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="date" name="tanggal" id="tanggal"></td>
+                <td><input type="date" name="tanggal" id="tanggal" value="2004-11-24"></td>
             </tr>
             <tr>
                 <td><label for="password">Password:</label></td>
