@@ -1,0 +1,1058 @@
+.home-page {
+    background-color: #f8f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home-page .div {
+    background-color: #f8f5f5;
+    overflow: hidden;
+    width: 1440px;
+    height: 4926px;
+    position: relative;
+  }
+  
+  .home-page .group {
+    position: absolute;
+    width: 1442px;
+    height: 300px;
+    top: 4626px;
+    left: 0;
+  }
+  
+  .home-page .overlap {
+    position: relative;
+    width: 1440px;
+    height: 300px;
+    justify-content: space-between;
+    background-color: #8ab9d5;
+    border-radius: 100px 100px 0px 0px;
+    display: flex;
+  }
+  
+  .home-page .text-wrapper {
+    position: absolute;
+    width: 217px;
+    height: 59px;
+    top: 24px;
+    left: 1117px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2.50px;
+    line-height: 37.5px;
+  }
+  
+  .home-page .logo-group {
+    position: absolute;
+    width: 212px;
+    height: 198px;
+    top: 27px;
+    left: 118px;
+  }
+  
+  .home-page .group-2 {
+    position: relative;
+    width: 214px;
+    height: 198px;
+  }
+  
+  .home-page .p {
+    position: absolute;
+    width: 212px;
+    height: 61px;
+    top: 110px;
+    left: 0;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0.80px;
+    line-height: 20.8px;
+  }
+  
+  .home-page .PELITA-HARAPAN {
+    position: absolute;
+    width: 199px;
+    height: 111px;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-page .group-3 {
+    position: absolute;
+    width: 538px;
+    height: 221px;
+    top: 27px;
+    left: 481px;
+  }
+  
+  .home-page .text-wrapper-2 {
+    position: absolute;
+    width: 219px;
+    height: 50px;
+    top: 0;
+    left: 130px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2.50px;
+    line-height: 37.5px;
+  }
+  
+  .home-page .group-4 {
+    position: absolute;
+    width: 408px;
+    height: 27px;
+    top: 194px;
+    left: 2px;
+  }
+  
+  .home-page .element {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    top: 3px;
+    left: 0;
+  }
+  
+  .home-page .text-wrapper-3 {
+    position: absolute;
+    height: 27px;
+    top: 0;
+    left: 50px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+    white-space: nowrap;
+  }
+  
+  .home-page .overlap-group {
+    position: absolute;
+    width: 538px;
+    height: 89px;
+    top: 56px;
+    left: 0;
+  }
+  
+  .home-page .group-5 {
+    position: absolute;
+    width: 535px;
+    height: 57px;
+    top: 0;
+    left: 3px;
+  }
+  
+  .home-page .ambulans-gawat {
+    position: absolute;
+    width: 488px;
+    height: 57px;
+    top: 0;
+    left: 45px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+  }
+  
+  .home-page .img {
+    position: absolute;
+    width: 27px;
+    height: 16px;
+    top: 21px;
+    left: 0;
+  }
+  
+  .home-page .group-6 {
+    position: absolute;
+    width: 434px;
+    height: 38px;
+    top: 51px;
+    left: 0;
+  }
+  
+  .home-page .text-wrapper-4 {
+    position: relative;
+    width: 382px;
+    height: 38px;
+    top: -10px;
+    left: 50px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+  }
+  
+  .home-page .element-2 {
+    position: absolute;
+    width: 37px;
+    height: 21px;
+    top: 9px;
+    left: 0;
+  }
+  
+  .home-page .group-7 {
+    position: absolute;
+    width: 413px;
+    height: 46px;
+    top: 145px;
+    left: 0;
+  }
+  
+  .home-page .text-wrapper-5 {
+    position: absolute;
+    width: 362px;
+    height: 46px;
+    top: 10px;
+    left: 49px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+  }
+  
+  .home-page .element-3 {
+    position: absolute;
+    width: 36px;
+    height: 23px;
+    top: 11px;
+    left: 0;
+  }
+  
+  .home-page .overlap-2 {
+    position: absolute;
+    width: 1440px;
+    height: 721px;
+    top: 162px;
+    left: 0;
+  }
+  
+  .home-page .group-8 {
+    position: absolute;
+    width: 1440px;
+    height: 700px;
+    top: 0;
+    left: 0;
+    background-color: #8ab9d5;
+  }
+  
+  .home-page .clip-path-group {
+    position: absolute;
+    width: 525px;
+    height: 505px;
+    top: 216px;
+    left: 800px;
+  }
+  
+  .home-page .SELAMAT-DATANG-DI {
+    position: absolute;
+    width: 615px;
+    height: 233px;
+    top: 111px;
+    left: 118px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 5px;
+    line-height: 60px;
+  }
+  
+  .home-page .text-wrapper-6 {
+    position: absolute;
+    width: 486px;
+    height: 34px;
+    top: 379px;
+    left: 118px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 1.35px;
+    line-height: 32.4px;
+    white-space: nowrap;
+  }
+  
+  .home-page .overlap-wrapper {
+    position: absolute;
+    width: 259px;
+    height: 70px;
+    top: 471px;
+    left: 118px;
+  }
+  
+  .home-page .home-btn {
+    display: inline-block;
+    position: relative;
+    width: 257px;
+    height: 70px;
+    background-color: #f8f5f5;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .home-page .home-btn:hover {
+    background-color: #086788;
+  }
+  
+  .home-page .text-wrapper-7 {
+    position: absolute;
+    width: 205px;
+    height: 24px;
+    top: 23px;
+    left: 26px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 1.00px;
+    line-height: 24.0px;
+    white-space: nowrap;
+  }
+  
+  .home-page .group-9 {
+    position: absolute;
+    width: 1162px;
+    height: 775px;
+    top: 947px;
+    left: 132px;
+  }
+  
+  .home-page .text-wrapper-8 {
+    position: absolute;
+    width: 281px;
+    height: 72px;
+    top: 0;
+    left: 448px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 4.80px;
+    line-height: 72px;
+  }
+  
+  .home-page .klinik-pelita {
+    position: absolute;
+    width: 627px;
+    height: 504px;
+    top: 121px;
+    left: 531px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 2.40px;
+    line-height: 36px;
+  }
+  
+  .home-page .FOTO-RS {
+    position: absolute;
+    width: 431px;
+    height: 328px;
+    top: 181px;
+    left: 0;
+  }
+  
+  .home-page .clip-path-group-2 {
+    position: absolute;
+    width: 412px;
+    height: 314px;
+    top: 7px;
+    left: 10px;
+  }
+  
+  .home-page .overlap-group-wrapper {
+    position: absolute;
+    width: 394px;
+    height: 64px;
+    top: 711px;
+    left: 549px;
+  }
+  
+  .home-page .aboutus-btn {
+    display: inline-block;
+    position: relative;
+    width: 392px;
+    height: 64px;
+    background-color: #8ab9d5;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .home-page .aboutus-btn:hover {
+    background-color: #086788;
+  }
+  
+  .home-page .text-wrapper-9 {
+    position: absolute;
+    width: 321px;
+    height: 36px;
+    top: 14px;
+    left: 36px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2.40px;
+    line-height: 36px;
+    white-space: nowrap;
+  }
+  
+  .home-page .overlap-3 {
+    position: absolute;
+    width: 1440px;
+    height: 158px;
+    top: -11px;
+    left: 0;
+    background-color: #f8f5f5;
+  }
+  
+  .home-page .text-wrapper-10 {
+    position: absolute;
+    width: 56px;
+    top: 77px;
+    left: 370px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+  }
+  
+  .home-page .text-wrapper-11 {
+    position: absolute;
+    width: 94px;
+    top: 77px;
+    left: 470px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+  }
+  
+  .home-page .text-wrapper-12 {
+    width: 73px;
+    top: 77px;
+    left: 608px;
+    font-family: 'Poppins', Helvetica;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .home-page .text-wrapper-13 {
+    position: absolute;
+    width: 79px;
+    top: 77px;
+    left: 725px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .home-page .text-wrapper-14 {
+    width: 63px;
+    top: 77px;
+    left: 856px;
+    font-family: 'Poppins', Helvetica;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .home-page .text-wrapper-15 {
+    position: absolute;
+    width: 70px;
+    top: 77px;
+    left: 973px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .home-page .sign-in-group {
+    position: absolute;
+    width: 130px;
+    height: 47px;
+    top: 65px;
+    left: 1220px;
+  }
+  
+  .home-page .signin-btn {
+    display: inline-block;
+    position: relative;
+    width: 128px;
+    height: 47px;
+    background-color: #8ab9d5;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .home-page .signin-btn:hover {
+    background-color: #086788;
+  }
+  
+  .home-page .text-wrapper-16 {
+    position: absolute;
+    width: 64px;
+    top: 14px;
+    left: 32px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .home-page .logo-klinik {
+    position: absolute;
+    width: 200px;
+    height: 136px;
+    top: 21px;
+    left: 87px;
+  }
+  
+  .home-page .group-10 {
+    position: absolute;
+    width: 1156px;
+    height: 968px;
+    top: 3553px;
+    left: 144px;
+  }
+  
+  .home-page .text-wrapper-17 {
+    position: absolute;
+    width: 942px;
+    height: 72px;
+    top: 92px;
+    left: 105px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-page .text-wrapper-18 {
+    width: 222px;
+    height: 89px;
+    top: 0;
+    left: 465px;
+    font-family: 'Poppins', Helvetica;
+    font-size: 48px;
+    letter-spacing: 4.80px;
+    line-height: 72px;
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .home-page .overlap-5 {
+    position: absolute;
+    width: 1156px;
+    height: 218px;
+    top: 234px;
+    left: 0;
+  }
+  
+  .home-page .group-11 {
+    position: absolute;
+    width: 1156px;
+    height: 218px;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-page .overlap-group-3 {
+    position: relative;
+    width: 1152px;
+    height: 218px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  
+  .home-page .text-wrapper-19 {
+    position: absolute;
+    width: 639px;
+    height: 72px;
+    top: 35px;
+    left: 265px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 1.20px;
+    line-height: 30px;
+  }
+  
+  .home-page .artikel-diabetes {
+    position: absolute;
+    width: 158px;
+    height: 150px;
+    top: 34px;
+    left: 44px;
+    border-radius: 20px;
+  }
+  
+  .home-page .group-12 {
+    position: absolute;
+    width: 62px;
+    height: 60px;
+    top: 79px;
+    left: 1010px;
+  }
+  
+  .home-page .artikel-btn {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #8ab9d5;
+    border-radius: 30px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .home-page .artikel-btn:hover {
+    background-color: #086788;
+  }
+  
+  .home-page .text-wrapper-21 {
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    top: auto;
+    left: 3px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 4.00px;
+    line-height: 60px;
+    white-space: nowrap;
+  }
+  
+  .home-page .overlap-7 {
+    position: absolute;
+    width: 1156px;
+    height: 218px;
+    top: 492px;
+    left: 0;
+  }
+  
+  .home-page .text-wrapper-22 {
+    top: 110px;
+    position: absolute;
+    width: 571px;
+    height: 30px;
+    left: 265px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 1.20px;
+    line-height: 30px;
+  }
+  
+  .home-page .group-13 {
+    position: absolute;
+    width: 62px;
+    height: 60px;
+    top: 68px;
+    left: 1010px;
+  }
+  
+  .home-page .artikel-telinga {
+    position: absolute;
+    width: 159px;
+    height: 142px;
+    top: 45px;
+    left: 42px;
+    border-radius: 20px;
+  }
+  
+  .home-page .overlap-8 {
+    position: absolute;
+    width: 1156px;
+    height: 218px;
+    top: 750px;
+    left: 0;
+  }
+  
+  .home-page .artikel-depresi {
+    position: absolute;
+    width: 150px;
+    height: 147px;
+    top: 35px;
+    left: 48px;
+    border-radius: 20px;
+  }
+  
+  .home-page .group-14 {
+    position: absolute;
+    width: 1444px;
+    height: 835px;
+    top: 1807px;
+    left: 0;
+  }
+  
+  .home-page .overlap-9 {
+    position: relative;
+    width: 1440px;
+    height: 835px;
+    background-color: #8ab9d5;
+  }
+  
+  .home-page .overlap-10 {
+    position: absolute;
+    width: 939px;
+    height: 161px;
+    top: 32px;
+    left: 254px;
+  }
+  
+  .home-page .text-wrapper-24 {
+    width: 222px;
+    height: 91px;
+    top: 0;
+    left: 379px;
+    font-family: 'Poppins', Helvetica;
+    font-size: 48px;
+    letter-spacing: 4.80px;
+    line-height: 72px;
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .home-page .text-wrapper-25 {
+    position: absolute;
+    width: 939px;
+    height: 71px;
+    top: 90px;
+    left: 0;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-page .group-15 {
+    position: absolute;
+    width: 1152px;
+    height: 466px;
+    top: 243px;
+    left: 147px;
+    box-shadow: 0px 4px 4px #00000080;
+  }
+  
+  .home-page .overlap-11 {
+    position: relative;
+    width: 1160px;
+    height: 474px;
+    left: -4px;
+  }
+  
+  .home-page .group-16 {
+    position: absolute;
+    width: 296px;
+    height: 474px;
+    top: 0;
+    left: 0;
+  }
+
+  .home-page .text-wrapper-31 {
+    position: absolute;
+    width: 225px;
+    height: 62px;
+    top: 315px;
+    left: 29px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+  }
+  
+  .home-page .text-wrapper-32 {
+    position: absolute;
+    width: 225px;
+    height: 30px;
+    top: 27px;
+    left: 29px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+
+  .home-page .image {
+    width: 200px;
+    height: 208px;
+  }
+  
+  .home-page .image .doctor-image {
+    border-radius: 50%;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  
+
+  .home-page .group-25 {
+    position: absolute;
+    width: 187px;
+    height: 46px;
+    top: 393px;
+    left: 49px;
+  }
+
+  .home-page .group-17 {
+    position: absolute;
+    width: 292px;
+    height: 466px;
+    top: 0;
+    left: 868px;
+  }
+  
+  .home-page .overlap-12 {
+    position: relative;
+    width: 288px;
+    height: 466px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .home-page .text-wrapper-26 {
+    position: absolute;
+    width: 225px;
+    height: 62px;
+    top: 315px;
+    left: 29px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+  }
+  
+  .home-page .text-wrapper-27 {
+    position: absolute;
+    width: 225px;
+    height: 30px;
+    top: 27px;
+    left: 29px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .home-page .group-18 {
+    position: absolute;
+    width: 187px;
+    height: 46px;
+    top: 393px;
+    left: 49px;
+  }
+  
+  .home-page .dokter-btn {
+    display: inline-block;
+    position: relative;
+    width: 185px;
+    height: 46px;
+    background-color: #8ab9d5;
+    border-radius: 50px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .home-page .dokter-btn:hover {
+    background-color: #086788;
+  }
+  
+  .home-page .text-wrapper-28 {
+    position: absolute;
+    width: 151px;
+    height: 26px;
+    top: 10px;
+    left: 17px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .home-page .group-19 {
+    position: absolute;
+    width: 292px;
+    height: 466px;
+    top: 0;
+    left: 436px;
+  }
+  
+  .home-page .text-wrapper-29 {
+    position: absolute;
+    width: 200px;
+    height: 62px;
+    top: 315px;
+    left: 44px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+  }
+  
+  .home-page .text-wrapper-30 {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 27px;
+    left: 110px;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .home-page .group-20 {
+    position: absolute;
+    width: 187px;
+    height: 46px;
+    top: 393px;
+    left: 52px;
+  }
+  
+  .home-page .group-21 {
+    position: absolute;
+    width: 1061px;
+    height: 208px;
+    top: 86px;
+    left: 48px;
+  }
+  
+  .home-page .group-22 {
+    position: absolute;
+    width: 200px;
+    height: 208px;
+    top: 0;
+    left: 432px;
+    background-image: url(./img/dokter3.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .home-page .group-23 {
+    position: absolute;
+    width: 200px;
+    height: 208px;
+    top: 0;
+    left: 0;
+    background-image: url(./img/dokter1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .home-page .group-24 {
+    position: absolute;
+    width: 200px;
+    height: 208px;
+    top: 0;
+    left: 861px;
+    background-image: url(./img/dokter2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }

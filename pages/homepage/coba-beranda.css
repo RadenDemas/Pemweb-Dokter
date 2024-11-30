@@ -1,0 +1,204 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F5F5;
+    margin: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.sign-in {
+    background-color: #8AB9D5;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    background-color: #086788;
+}
+
+.hero {
+    position: relative;
+    background-color: #8ad5b7;
+    border-radius: 0px 80px 0px 80px;
+    width: 1440px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hero .content {
+    color: black;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.info-selengkapnya {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.info-selengkapnya:hover {
+    cursor: pointer;
+}
+
+.doctors {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#about-us {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#about-us .content {
+    margin-left: 20px;
+}
+
+.baca-selengkapnya {
+    background-color: #8AB9D5;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.doctor-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 20px;
+    width: 288px;
+    height: 466px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+.doctor-images {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.lihat-profil {
+    background-color: #8AB9D5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.article-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.article-item {
+    position: relative;
+}
+
+.article-image {
+    width: 158px;
+    height: 150px;
+}
+
+.artikel-button {
+    background-color: #8AB9D5;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #8AB9D5;
+    border-radius: 80px 80px 0px 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.footer-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
