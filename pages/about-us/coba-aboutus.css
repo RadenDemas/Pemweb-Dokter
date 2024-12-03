@@ -1,471 +1,63 @@
-.about-us {
-    background-color: #f8f5f5;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+body {
     font-family: 'Poppins', Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f5;
 }
 
-.about-us .div {
-    background-color: #f8f5f5;
+.container {
+    width: 80%;
+    margin: auto;
     overflow: hidden;
-    width: 100%;
-    height: 1876px;
-    position: relative;
 }
 
-.about-us .overlap {
-    position: absolute;
-    width: 1452px;
-    height: 240px;
-    top: 0;
-    left: 0;
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
-.about-us .header {
-    position: absolute;
-    width: 267px;
-    height: 72px;
-    top: 168px;
-    left: 587px;
-    font-weight: 600;
-    color: #000000;
-    font-size: 48px;
-    letter-spacing: 4.80px;
-    line-height: 72px;
+header .logo-klinik img {
+    width: 150px;
 }
 
-.about-us .group {
-    position: absolute;
-    width: 1452px;
-    height: 169px;
-    top: 0;
-    left: 0;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.about-us .navbar-group {
-    position: relative;
-    width: 1440px;
-    height: 169px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.about-us .navbar {
-    position: fixed;
-    width: 100%;
-    height: 115px;
-    top: 0;
-    padding: 15px;
-    background-color: #f8f5f5;
-    z-index: 1000;
-    color: #000000;
-    transition: background-color 0.5s ease;
-}
-
-.navbar .scrolled {
-    background-color: #8ab9d5;
-}
-
-.about-us .text-home {
-    position: absolute;
-    width: 56px;
-    top: 78px;
-    left: 370px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-}
-
-.about-us .home-page {
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: #000000;
 }
 
-.about-us .text-about-us {
-    position: absolute;
-    width: 94px;
-    top: 78px;
-    left: 470px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-}
-
-.about-us .about-us-page {
-    text-decoration: none;
-    color: #000000;
-}
-
-.about-us .text-dokter {
-    position: absolute;
-    width: 73px;
-    top: 78px;
-    left: 608px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-    white-space: nowrap;
-}
-
-.about-us .dokter-page {
-    text-decoration: none;
-    color: #000000;
-}
-
-.about-us .text-booking {
-    position: absolute;
-    width: 79px;
-    top: 78px;
-    left: 725px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-    white-space: nowrap;
-}
-
-.about-us .booking-page {
-    text-decoration: none;
-    color: #000000;
-}
-
-.about-us .text-artikel {
-    position: absolute;
-    width: 63px;
-    top: 78px;
-    left: 856px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-    white-space: nowrap;
-}
-
-.about-us .artikel-page {
-    text-decoration: none;
-    color: #000000;
-}
-
-.about-us .text-kontak {
-    position: absolute;
-    width: 70px;
-    top: 78px;
-    left: 973px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-    white-space: nowrap;
-}
-
-.about-us .kontak-page {
-    text-decoration: none;
-    color: #000000;
-}
-
-.about-us .logo-klinik {
-    position: absolute;
-    width: 222px;
-    height: 150px;
-    top: 19px;
-    left: 92px;
-}
-
-.about-us .sign-in-group {
-    position: absolute;
-    width: 130px;
-    height: 47px;
-    top: 65px;
-    left: 1220px;
-}
-
-.about-us .signin-btn {
-    display: inline-block;
-    position: relative;
-    width: 128px;
-    height: 47px;
-    background-color: #8ab9d5;
-    border-radius: 10px;
-    text-align: center;
-    color: black;
+.signin-btn {
+    background: #8ab9d5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 20px;
+    font-weight: 400;
 }
 
-.about-us .signin-btn:hover {
-    background-color: #086788;
+.about-us, .mission {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
-.about-us .text-sign-in {
-    position: absolute;
-    width: 64px;
-    top: 14px;
-    left: 32px;
-    font-weight: 600;
-    color: #000000;
-    font-size: 20px;
+
+
+footer {
+    background: #35424a;
+    color: #ffffff;
     text-align: center;
-    letter-spacing: -0.80px;
-    line-height: 20px;
-    white-space: nowrap;
-}
-
-.about-us .group-2 {
-    position: absolute;
-    width: 1180px;
-    height: 1149px;
-    top: 301px;
-    left: 132px;
-    padding-top: 60px;
-}
-
-.about-us .klinik-pelita {
-    position: absolute;
-    width: 627px;
-    height: 504px;
-    top: 0;
-    left: 549px;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 2.40px;
-    line-height: 36px;
-}
-
-.about-us .misi-visi {
-    position: absolute;
-    width: 1176px;
-    top: 573px;
-    left: 0;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 2.40px;
-    line-height: 36px;
-}
-
-.about-us .gambar-klinik {
-    position: absolute;
-    width: 431px;
-    height: 400px;
-    top: 52px;
-    left: 0;
-}
-
-.about-us .foto {
-    position: absolute;
-    width: 412px;
-    height: 383px;
-    top: 9px;
-    left: 10px;
-}
-
-.about-us .footer {
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    top: 1576px;
-    left: 0;
-    background-color: #8ab9d5;
-    border-radius: 100px 100px 0px 0px;
-}
-
-.about-us .group-3 {
-    position: relative;
-    width: 899px;
-    height: 221px;
-    top: 27px;
-    left: 270px;
-}
-
-.about-us .logo-klinik-2 {
-    position: absolute;
-    width: 212px;
-    height: 198px;
-    top: 0;
-    left: 0;
-}
-
-.about-us .group-4 {
-    position: relative;
-    width: 214px;
-    height: 198px;
-}
-
-.about-us .text-alamat {
-    position: absolute;
-    width: 212px;
-    height: 61px;
-    top: 137px;
-    left: 0;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: justify;
-    letter-spacing: 0.80px;
-    line-height: 20.8px;
-}
-
-.about-us .pelita-harapan {
-    position: absolute;
-    width: 199px;
-    height: 111px;
-    top: 0;
-    left: 0;
-}
-
-.about-us .group-5 {
-    position: absolute;
-    width: 538px;
-    height: 221px;
-    top: 0;
-    left: 363px;
-}
-
-.about-us .text-footer {
-    position: absolute;
-    width: 219px;
-    height: 50px;
-    top: 0;
-    left: 130px;
-    font-weight: 600;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 2.50px;
-    line-height: 37.5px;
-}
-
-.about-us .group-6 {
-    position: absolute;
-    width: 408px;
-    height: 27px;
-    top: 194px;
-    left: 2px;
-}
-
-.about-us .logo-email {
-    position: absolute;
-    width: 32px;
-    height: 22px;
-    top: 3px;
-    left: 0;
-}
-
-.about-us .text-email {
-    position: absolute;
-    height: 27px;
-    top: 0;
-    left: 50px;
-    font-weight: 400;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 1.80px;
-    line-height: 27px;
-    white-space: nowrap;
-}
-
-.about-us .overlap-group {
-    position: absolute;
-    width: 538px;
-    height: 89px;
-    top: 56px;
-    left: 0;
-}
-
-.about-us .group-7 {
-    position: absolute;
-    width: 538px;
-    height: 57px;
-    top: 0;
-    left: 0;
-}
-
-.about-us .text-ambulan {
-    position: absolute;
-    width: 488px;
-    height: 57px;
-    top: 0;
-    left: 48px;
-    font-weight: 400;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 1.80px;
-    line-height: 27px;
-}
-
-.about-us .logo-ambulan {
-    position: absolute;
-    width: 36px;
-    height: 21px;
-    top: 19px;
-    left: 0;
-}
-
-.about-us .group-8 {
-    position: absolute;
-    width: 434px;
-    height: 38px;
-    top: 51px;
-    left: 0;
-}
-
-.about-us .text-telpon {
-    position: absolute;
-    width: 382px;
-    height: 38px;
-    top: -10px;
-    left: 50px;
-    font-weight: 400;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 1.80px;
-    line-height: 27px;
-}
-
-.about-us .logo-telpon {
-    position: absolute;
-    width: 37px;
-    height: 21px;
-    top: 9px;
-    left: 0;
-}
-
-.about-us .group-9 {
-    position: absolute;
-    width: 413px;
-    height: 46px;
-    top: 145px;
-    left: 0;
-}
-
-.about-us .text-whatsapp {
-    position: absolute;
-    width: 362px;
-    height: 46px;
-    top: 10px;
-    left: 49px;
-    font-weight: 400;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 1.80px;
-    line-height: 27px;
-}
-
-.about-us .logo-whatsapp {
-    position: absolute;
-    width: 36px;
-    height: 23px;
-    top: 11px;
-    left: 0;
+    padding: 10px 0;
 }
