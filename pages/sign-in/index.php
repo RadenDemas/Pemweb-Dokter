@@ -1,10 +1,10 @@
 <?php
     session_start();
     if(!($_SESSION['login'] === true)){
-        header("Location:login.php");
+        header("Location:signin.php");
     }
     if(isset($_POST['logout'])){
-        header("Location:kill.php");
+        header("Location:..\..\scripts\php\kill.php");
     }
     var_dump($_SESSION)
 ?>
