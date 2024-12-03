@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Helvetica;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f5f5;
 }
 
 .container {
@@ -37,11 +37,13 @@ nav ul li a {
 }
 
 .signin-btn {
-    background: #e8491d;
+    background: #8ab9d5;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 20px;
+    font-weight: 400;
 }
 
 .about-us, .mission {
@@ -50,6 +52,8 @@ nav ul li a {
     margin: 20px 0;
     border-radius: 5px;
 }
+
+
 
 footer {
     background: #35424a;

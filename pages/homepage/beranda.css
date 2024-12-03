@@ -4,12 +4,13 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    font-family: 'Poppins', Helvetica;
   }
   
   .home-page .div {
     background-color: #f8f5f5;
     overflow: hidden;
-    width: 1440px;
+    width: 100%;
     height: 4926px;
     position: relative;
   }
@@ -24,7 +25,7 @@
   
   .home-page .overlap {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 300px;
     justify-content: space-between;
     background-color: #8ab9d5;
@@ -32,25 +33,11 @@
     display: flex;
   }
   
-  .home-page .text-wrapper {
-    position: absolute;
-    width: 217px;
-    height: 59px;
-    top: 24px;
-    left: 1117px;
-    font-family: 'Poppins', Helvetica;
-    font-weight: 600;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 2.50px;
-    line-height: 37.5px;
-  }
-  
   .home-page .logo-group {
     position: absolute;
     width: 212px;
     height: 198px;
-    top: 27px;
+    top: 0;
     left: 118px;
   }
   
@@ -66,7 +53,6 @@
     height: 61px;
     top: 110px;
     left: 0;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 16px;
@@ -97,7 +83,6 @@
     height: 50px;
     top: 0;
     left: 130px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 25px;
@@ -126,7 +111,6 @@
     height: 27px;
     top: 0;
     left: 50px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 18px;
@@ -157,7 +141,6 @@
     height: 57px;
     top: 0;
     left: 45px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 18px;
@@ -187,7 +170,6 @@
     height: 38px;
     top: -10px;
     left: 50px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 18px;
@@ -217,7 +199,6 @@
     height: 46px;
     top: 10px;
     left: 49px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 18px;
@@ -243,11 +224,12 @@
   
   .home-page .group-8 {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 700px;
     top: 0;
     left: 0;
     background-color: #8ab9d5;
+    border-radius: 100px 0px 100px 0px;
   }
   
   .home-page .clip-path-group {
@@ -264,7 +246,6 @@
     height: 233px;
     top: 111px;
     left: 118px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 900;
     color: #000000;
     font-size: 48px;
@@ -278,7 +259,6 @@
     height: 34px;
     top: 379px;
     left: 118px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 27px;
@@ -318,7 +298,6 @@
     height: 24px;
     top: 23px;
     left: 26px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 20px;
@@ -341,7 +320,6 @@
     height: 72px;
     top: 0;
     left: 448px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 48px;
@@ -355,7 +333,6 @@
     height: 504px;
     top: 121px;
     left: 531px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 24px;
@@ -411,7 +388,6 @@
     height: 36px;
     top: 14px;
     left: 36px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 24px;
@@ -421,48 +397,60 @@
     white-space: nowrap;
   }
   
-  .home-page .overlap-3 {
-    position: absolute;
-    width: 1440px;
-    height: 158px;
-    top: -11px;
-    left: 0;
+  .home-page .navbar {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    top: -5px;
+    padding: 15px;
     background-color: #f8f5f5;
+    z-index: 1000;
+    color: #000000;
+    transition: background-color 0.5s ease;
+  }
+
+  .navbar .scrolled {
+    background-color: #8ab9d5;
   }
   
-  .home-page .text-wrapper-10 {
+  .home-page .text-home {
     position: absolute;
     width: 56px;
     top: 77px;
     left: 370px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
-    color: #000000;
     font-size: 20px;
     text-align: center;
     letter-spacing: -0.80px;
     line-height: 20px;
   }
+
+  .home-page .homepage {
+    text-decoration: none;
+    color: #000000;
+  }
   
-  .home-page .text-wrapper-11 {
+  .home-page .text-about-us {
     position: absolute;
     width: 94px;
     top: 77px;
     left: 470px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
-    color: #000000;
     font-size: 20px;
     text-align: center;
     letter-spacing: -0.80px;
     line-height: 20px;
   }
+
+  .home-page .about-us-page {
+    text-decoration: none;
+    color: #000000;
+  }
   
-  .home-page .text-wrapper-12 {
+  .home-page .text-dokter {
     width: 73px;
     top: 77px;
     left: 608px;
-    font-family: 'Poppins', Helvetica;
     font-size: 20px;
     text-align: center;
     letter-spacing: -0.80px;
@@ -470,29 +458,35 @@
     white-space: nowrap;
     position: absolute;
     font-weight: 600;
-    color: #000000;
   }
   
-  .home-page .text-wrapper-13 {
+  .home-page .dokter-page {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .home-page .text-booking {
     position: absolute;
     width: 79px;
     top: 77px;
     left: 725px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
-    color: #000000;
     font-size: 20px;
     text-align: center;
     letter-spacing: -0.80px;
     line-height: 20px;
     white-space: nowrap;
   }
+
+  .home-page .booking-page {
+    text-decoration: none;
+    color: #000000;
+  }
   
-  .home-page .text-wrapper-14 {
+  .home-page .text-artikel {
     width: 63px;
     top: 77px;
     left: 856px;
-    font-family: 'Poppins', Helvetica;
     font-size: 20px;
     text-align: center;
     letter-spacing: -0.80px;
@@ -500,22 +494,29 @@
     white-space: nowrap;
     position: absolute;
     font-weight: 600;
+  }
+
+  .home-page .artikel-page {
+    text-decoration: none;
     color: #000000;
   }
   
-  .home-page .text-wrapper-15 {
+  .home-page .text-kontak {
     position: absolute;
     width: 70px;
     top: 77px;
     left: 973px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
-    color: #000000;
     font-size: 20px;
     text-align: center;
     letter-spacing: -0.80px;
     line-height: 20px;
     white-space: nowrap;
+  }
+
+  .home-page .kontak-page {
+    text-decoration: none;
+    color: #000000;
   }
   
   .home-page .sign-in-group {
@@ -548,7 +549,6 @@
     width: 64px;
     top: 14px;
     left: 32px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: black;
     font-size: 20px;
@@ -580,7 +580,6 @@
     height: 72px;
     top: 92px;
     left: 105px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 24px;
@@ -594,7 +593,6 @@
     height: 89px;
     top: 0;
     left: 465px;
-    font-family: 'Poppins', Helvetica;
     font-size: 48px;
     letter-spacing: 4.80px;
     line-height: 72px;
@@ -633,7 +631,6 @@
     height: 72px;
     top: 35px;
     left: 265px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 500;
     color: #000000;
     font-size: 24px;
@@ -682,7 +679,6 @@
     height: 45px;
     top: auto;
     left: 3px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 40px;
@@ -706,7 +702,6 @@
     width: 571px;
     height: 30px;
     left: 265px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 24px;
@@ -777,7 +772,6 @@
     height: 91px;
     top: 0;
     left: 379px;
-    font-family: 'Poppins', Helvetica;
     font-size: 48px;
     letter-spacing: 4.80px;
     line-height: 72px;
@@ -792,7 +786,6 @@
     height: 71px;
     top: 90px;
     left: 0;
-    font-family: 'Poppins', Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 24px;
@@ -831,7 +824,6 @@
     height: 62px;
     top: 315px;
     left: 29px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 20px;
@@ -846,7 +838,6 @@
     height: 30px;
     top: 27px;
     left: 29px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 20px;
@@ -904,7 +895,6 @@
     height: 62px;
     top: 315px;
     left: 29px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 20px;
@@ -919,7 +909,6 @@
     height: 30px;
     top: 27px;
     left: 29px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 20px;
@@ -960,7 +949,6 @@
     height: 26px;
     top: 10px;
     left: 17px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 500;
     color: #ffffff;
     font-size: 20px;
@@ -984,7 +972,6 @@
     height: 62px;
     top: 315px;
     left: 44px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 20px;
@@ -999,7 +986,6 @@
     height: 30px;
     top: 27px;
     left: 110px;
-    font-family: 'Poppins', Helvetica;
     font-weight: 600;
     color: #000000;
     font-size: 20px;
