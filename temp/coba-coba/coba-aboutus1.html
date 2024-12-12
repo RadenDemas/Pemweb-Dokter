@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+.about-us {
+    background-color: #f8f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Poppins', Helvetica;
+}
+
+.about-us .div {
+    background-color: #f8f5f5;
+    overflow: hidden;
+    width: 100%;
+    height: 1876px;
+    position: relative;
+}
+
+.about-us .overlap {
+    position: absolute;
+    width: 1452px;
+    height: 240px;
+    top: 0;
+    left: 0;
+}
+
+.about-us .header {
+    position: absolute;
+    width: 267px;
+    height: 72px;
+    top: 168px;
+    left: 587px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 4.80px;
+    line-height: 72px;
+}
+
+.about-us .group {
+    position: absolute;
+    width: 1452px;
+    height: 169px;
+    top: 0;
+    left: 0;
+}
+
+.about-us .navbar-group {
+    position: relative;
+    width: 1440px;
+    height: 169px;
+}
+
+.about-us .navbar {
+    position: fixed;
+    width: 100%;
+    height: 115px;
+    top: 0;
+    padding: 15px;
+    background-color: #f8f5f5;
+    z-index: 1000;
+    color: #000000;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .scrolled {
+    background-color: #8ab9d5;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.profile-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.about-us .text-home {
+    position: absolute;
+    width: 56px;
+    top: 78px;
+    left: 370px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+}
+
+.about-us .home-page {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-us .text-about-us {
+    position: absolute;
+    width: 94px;
+    top: 78px;
+    left: 470px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+}
+
+.about-us .about-us-page {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-us .text-dokter {
+    position: absolute;
+    width: 73px;
+    top: 78px;
+    left: 608px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.about-us .dokter-page {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-us .text-booking {
+    position: absolute;
+    width: 79px;
+    top: 78px;
+    left: 725px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.about-us .booking-page {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-us .text-artikel {
+    position: absolute;
+    width: 63px;
+    top: 78px;
+    left: 856px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.about-us .artikel-page {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-us .text-kontak {
+    position: absolute;
+    width: 70px;
+    top: 78px;
+    left: 973px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.about-us .kontak-page {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-us .logo-klinik {
+    position: absolute;
+    width: 222px;
+    height: 150px;
+    top: 19px;
+    left: 92px;
+}
+
+.about-us .sign-in-group {
+    position: absolute;
+    width: 130px;
+    height: 47px;
+    top: 65px;
+    left: 1220px;
+}
+
+.about-us .signin-btn {
+    display: inline-block;
+    position: relative;
+    width: 128px;
+    height: 47px;
+    background-color: #8ab9d5;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-us .signin-btn:hover {
+    background-color: #086788;
+}
+
+.about-us .text-sign-in {
+    position: absolute;
+    width: 64px;
+    top: 14px;
+    left: 32px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.80px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.about-us .group-2 {
+    position: absolute;
+    width: 1180px;
+    height: 1149px;
+    top: 301px;
+    left: 132px;
+    padding-top: 60px;
+}
+
+.about-us .klinik-pelita {
+    position: absolute;
+    width: 627px;
+    height: 504px;
+    top: 0;
+    left: 549px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 2.40px;
+    line-height: 36px;
+}
+
+.about-us .misi-visi {
+    position: absolute;
+    width: 1176px;
+    top: 573px;
+    left: 0;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 2.40px;
+    line-height: 36px;
+}
+
+.about-us .gambar-klinik {
+    position: absolute;
+    width: 431px;
+    height: 400px;
+    top: 52px;
+    left: 0;
+}
+
+.about-us .foto {
+    position: absolute;
+    width: 412px;
+    height: 383px;
+    top: 9px;
+    left: 10px;
+}
+
+.about-us .footer {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 1576px;
+    left: 0;
+    background-color: #8ab9d5;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.about-us .group-3 {
+    position: relative;
+    width: 899px;
+    height: 221px;
+    top: 27px;
+    left: 270px;
+}
+
+.about-us .logo-klinik-2 {
+    position: absolute;
+    width: 212px;
+    height: 198px;
+    top: 0;
+    left: 0;
+}
+
+.about-us .group-4 {
+    position: relative;
+    width: 214px;
+    height: 198px;
+}
+
+.about-us .text-alamat {
+    position: absolute;
+    width: 212px;
+    height: 61px;
+    top: 137px;
+    left: 0;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0.80px;
+    line-height: 20.8px;
+}
+
+.about-us .pelita-harapan {
+    position: absolute;
+    width: 199px;
+    height: 111px;
+    top: 0;
+    left: 0;
+}
+
+.about-us .group-5 {
+    position: absolute;
+    width: 538px;
+    height: 221px;
+    top: 0;
+    left: 363px;
+}
+
+.about-us .text-footer {
+    position: absolute;
+    width: 219px;
+    height: 50px;
+    top: 0;
+    left: 130px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2.50px;
+    line-height: 37.5px;
+}
+
+.about-us .group-6 {
+    position: absolute;
+    width: 408px;
+    height: 27px;
+    top: 194px;
+    left: 2px;
+}
+
+.about-us .logo-email {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    top: 3px;
+    left: 0;
+}
+
+.about-us .text-email {
+    position: absolute;
+    height: 27px;
+    top: 0;
+    left: 50px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+    white-space: nowrap;
+}
+
+.about-us .overlap-group {
+    position: absolute;
+    width: 538px;
+    height: 89px;
+    top: 56px;
+    left: 0;
+}
+
+.about-us .group-7 {
+    position: absolute;
+    width: 538px;
+    height: 57px;
+    top: 0;
+    left: 0;
+}
+
+.about-us .text-ambulan {
+    position: absolute;
+    width: 488px;
+    height: 57px;
+    top: 0;
+    left: 48px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+}
+
+.about-us .logo-ambulan {
+    position: absolute;
+    width: 36px;
+    height: 21px;
+    top: 19px;
+    left: 0;
+}
+
+.about-us .group-8 {
+    position: absolute;
+    width: 434px;
+    height: 38px;
+    top: 51px;
+    left: 0;
+}
+
+.about-us .text-telpon {
+    position: absolute;
+    width: 382px;
+    height: 38px;
+    top: -10px;
+    left: 50px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+}
+
+.about-us .logo-telpon {
+    position: absolute;
+    width: 37px;
+    height: 21px;
+    top: 9px;
+    left: 0;
+}
+
+.about-us .group-9 {
+    position: absolute;
+    width: 413px;
+    height: 46px;
+    top: 145px;
+    left: 0;
+}
+
+.about-us .text-whatsapp {
+    position: absolute;
+    width: 362px;
+    height: 46px;
+    top: 10px;
+    left: 49px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 27px;
+}
+
+.about-us .logo-whatsapp {
+    position: absolute;
+    width: 36px;
+    height: 23px;
+    top: 11px;
+    left: 0;
+}
+
+/* CSS untuk Responsivitas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Sembunyikan navbar di mobile */
+    }
+
+    .navbar.active {
+        display: flex; /* Tampilkan navbar saat hamburger menu diklik */
+    }
+
+    .menu-icon {
+        display: block; /* Tampilkan hamburger menu */
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .profile-menu {
+        position: relative;
+    }
+
+    .profile-dropdown {
+        display: none; /* Sembunyikan dropdown profil */
+        position: absolute;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .profile-menu:hover .profile-dropdown {
+        display: block; /* Tampilkan dropdown saat hover */
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.2s;
+    }
+
+    .dropdown-item:hover {
+        background-color: #e0e0e0; /* Ganti warna saat hover */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Sesuaikan tinggi footer di mobile */
+        padding: 20px; /* Tambahkan padding */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="about-us">
+        <div class="div">
+            <div class="overlap">
+                <div class="header">About Us</div>
+                <div class="group">
+                    <div class="navbar-group">
+                        <div class="navbar" id="navbar">
+                          <div class="menu-icon" id="menu-icon">&#9776;</div>
+                            <div class="text-home"><a href="../homepage/index-beranda.html" class="home-page">Home</a></div>
+                            <div class="text-about-us"><a href="index-aboutus.html" class="about-us-page">About Us</a></div>
+                            <div class="text-dokter"><a href="../dokter/index-dokter.html" class="dokter-page">Dokter</a></div>
+                            <div class="text-booking"><a href="../booking/index-booking.html" class="booking-page">Booking</a></div>
+                            <div class="text-artikel"><a href="../artikel/index-artikel.html" class="artikel-page">Artikel</a></div>
+                            <div class="text-kontak"><a href="../kontak/index-kontak.html" class="kontak-page">Kontak</a></div>
+                            <img class="logo-klinik" src="../../Assets/logo rumah sakit.svg" />
+                            <div class="profile-menu">
+                              <div class="profile-icon">&#128100;</div>
+                              <div class="profile-dropdown">
+                                <a href="#" class="dropdown-item">Lihat Akun</a>
+                                <a href="#" class="dropdown-item">Sign Out</a>
+                              </div>
+                            </div>
+                            <div class="sign-in-group">
+                                <a href="../sign-in/index-signin.html" class="signin-btn"><div class="text-sign-in">Sign In</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-2">
+                <p class="klinik-pelita">
+                    Klinik Pelita Harapan hadir untuk menjadi pelita harapan bagi kesehatan Anda. Kami berkomitmen untuk
+                    memberikan layanan kesehatan kelas dunia dengan mengutamakan kenyamanan, kepercayaan, dan kepuasan pasien.<br />Sebagai penyedia layanan kesehatan terdepan, kami menggabungkan teknologi modern dengan pendekatan yang penuh kasih.
+                    Tim medis kami yang profesional siap melayani Anda dengan solusi kesehatan yang menyeluruh, mulai dari diagnosis akurat hingga perawatan yang dipersonalisasi sesuai kebutuhan Anda.
+                </p>
+                <p class="misi-visi">
+                    Misi: <br />Membawa harapan dan kehidupan yang lebih baik bagi setiap pasien melalui layanan kesehatan yang unggul, berlandaskan empati dan inovasi. <br />Visi: Menjadi klinik terkemuka yang menginspirasi perubahan
+                    positif melalui pelayanan kesehatan berkualitas, teknologi terkini, dan kepedulian yang tulus.&nbsp;&nbsp;<br />Nilai-Nilai Kami: <br />1. Kepedulian: Memberikan perhatian terbaik bagi pasien dan keluarga mereka, memastikan kenyamanan di setiap langkah perjalanan kesehatan. <br />2. Keunggulan: Menjunjung tinggi standar mutu layanan untuk hasil perawatan yang maksimal. <br />3. Integritas: Bekerja secara transparan
+                    dan etis dalam setiap aspek pelayanan kami. <br />4. Kolaborasi: Mmebangun kerja sama yang erat antara tenaga medis, pasien, dan komunitas untuk menciptakan kesehatan yang lebih baik.&nbsp;&nbsp;<br />Di Klinik Pelita Harapan, kami hadir
+                    untuk menyalakan semangat dan harapan baru bagi kesehatan Anda.<br /><br /><b>Kesehatan Anda, Prioritas Kami.</b>
+                </p>
+                <div class="gambar-klinik"><img class="foto" src="../../Assets/rumah sakit.jpg" alt="Foto Klinik" /></div>
+            </div>
+            <div class="footer">
+                <div class="group-3">
+                    <div class="logo-klinik-2">
+                        <div class="group-4">
+                            <p class="text-alamat">Jl. Cahaya Sejahtera No. 88, Harapan Indah, Kec. Mentari Baru, Jakarta</p>
+                            <img class="pelita-harapan" src="../../Assets/logo rumah sakit.svg" alt="Logo Klinik Pelita Harapan" />
+                        </div>
+                    </div>
+                    <div class="group-5">
+                        <div class="text-footer">Hubungi Kami</div>
+                        <div class="group-6">
+                            <img class="logo-email" src="../../Assets/logo email.svg" />
+                            <div class="text-email">infohospital@pelitaharapan.co.id</div>
+                        </div>
+                        <div class="overlap-group">
+                            <div class="group-7">
+                                <p class="text-ambulan">Ambulans &amp; Gawat Darurat 0266 666 0 000</p>
+                                <img class="logo-ambulan" src="../../Assets/logo ambulan.svg" />
+                            </div>
+                            <div class="group-8">
+                                <p class="text-telpon">Pusat Panggilan 0255 555 0 000</p>
+                                <img class="logo-telpon" src="../../Assets/logo telpon.svg" />
+                            </div>
+                        </div>
+                        <div class="group-9">
+                            <div class="text-whatsapp">Whatsapp 628888888888</div>
+                            <img class="logo-whatsapp" src="../../Assets/logo whatsapp.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+const navbar = document.getElementById('navbar');
+const menuIcon = document.getElementById('menu-icon');
+const profileMenu = document.querySelector('.profile-menu .profile-dropdown');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+menuIcon.addEventListener('click', () => {
+    const navLinks = document.querySelectorAll('.navbar div:not(.profile-menu)');
+    navLinks.forEach(link => {
+        link.classList.toggle('active');
+    });
+});
+
+document.querySelector('.profile-icon').addEventListener('mouseover', () => {
+    profileMenu.style.display = 'block';
+});
+
+document.querySelector('.profile-menu').addEventListener('mouseleave', () => {
+    profileMenu.style.display = 'none';
+});
+    </script>
+</body>
+</html>

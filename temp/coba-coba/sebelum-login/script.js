@@ -1,10 +1,16 @@
-// Mobile menu toggle
-const menuIcon = document.querySelector('.menu-icon');
-const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  let isMenuOpen = false;
 
-menuIcon.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-});
+  menuBtn.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      mobileMenu.classList.toggle('active');
+      menuBtn.innerHTML = isMenuOpen 
+          ? '<img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/x.svg" alt="Close" class="menu-icon">'
+          : '<img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">';
+  });
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
@@ -12,6 +18,13 @@ document.addEventListener('click', (e) => {
     navMenu.classList.remove('active');
   }
 });
+
+  // Close mobile menu when clicking on a menu item
+  mobileMenu.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      mobileMenu.classList.remove('active');
+    }
+  });
 
 // Smooth scroll for sections
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -44,24 +57,5 @@ sections.forEach(section => {
   section.style.opacity = '0';
   section.style.transform = 'translateY(20px)';  
   observer.observe(section);
-});
-
-// Profile dropdown functionality
-const profileBtn = document.querySelector('.profile-btn');
-const profileDropdown = document.querySelector('.profile-dropdown');
-
-profileBtn.addEventListener('mouseenter', () => {
-  profileDropdown.style.display = 'block';
-});
-
-profileBtn.addEventListener('mouseleave', () => {
-  setTimeout(() => {
-    if (!profileDropdown.matches(':hover')) {
-      profileDropdown.style.display = 'none';
-    }
-  }, 100);
-});
-
-profileDropdown.addEventListener('mouseleave', () => {
-  profileDropdown.style.display = 'none';
+  });
 });

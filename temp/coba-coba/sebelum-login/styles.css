@@ -9,56 +9,63 @@
     font-family: 'Poppins', system-ui, -apple-system, sans-serif;
     background-color: rgb(249, 250, 251);
     scroll-behavior: smooth;
+    min-height: 100vh;
   }
   
-  /* Navbar styles */
+  /* Navigation */
   .navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    z-index: 50;
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     padding: 1rem 1.5rem;
   }
-  
+
   .nav-container {
-    max-width: 80rem;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0 1rem;
+    height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .nav-logo img {
-    height: 5.0rem;
-  }
-  
-  .menu-icon {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .nav-menu {
+
+  .nav-left {
     display: flex;
     align-items: center;
-    gap: 2rem;
   }
-  
-  .nav-link {
+
+  .logo {
+    height: 5.0rem;
+    width: auto;
+  }
+
+  .nav-links {
+    margin-left: 2.5rem;
+    display: none;
+    transition: color 0.2s;
     text-decoration: none;
-    color: #333;
+  }
+
+  .nav-links a {
+    color: #111827;
+    text-decoration: none;
+    margin-right: 2rem;
     transition: color 0.2s;
   }
-  
-  .nav-link:hover {
+
+  .nav-links a:hover {
     color: #3b82f6;
   }
-  
-  .profile-menu {
-    position: relative;
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
-  
+
   .profile-btn {
     background: none;
     border: none;
@@ -68,62 +75,57 @@
     border-radius: 9999px;
     transition: background-color 0.2s;
   }
-  
+
   .profile-btn:hover {
     background-color: #f3f4f6;
   }
-  
-  .profile-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    width: 12rem;
-    background-color: white;
-    border-radius: 0.375rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 0.5rem;
+
+  .profile-icon {
+    width: 24px;
+    height: 24px;
   }
-  
-  .profile-menu:hover .profile-dropdown {
-    display: block;
-  }
-  
-  .profile-dropdown a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.2s;
-  }
-  
-  .profile-dropdown a:hover {
-    background-color: #a8daf7;
-  }
-  
-  .dropdown-item {
-    padding: 0.5rem 1rem;
-    color: #333;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.2s;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #9adaff;
-  }
-  
+
   .signin-btn {
-    background-color: #8AB9D5;
-    color: #000000;
+    background-color: #7FBCD2;
+    color: black;
     padding: 0.5rem 1rem;
+    border: none;
     border-radius: 0.375rem;
-    text-decoration: none;
+    cursor: pointer;
     transition: background-color 0.2s;
   }
-  
+
   .signin-btn:hover {
-    background-color: #6a9ff5;
+    background-color: #3b82f6;
+  }
+
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-menu {
+    display: none;
+    padding: 0.5rem;
+    background-color: white;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 0.75rem;
+    color: #111827;
+    text-decoration: none;
   }
   
   /* Hero section */
@@ -132,14 +134,17 @@
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     padding: 5rem 1.5rem;
+    display: flex;
+    align-items: center;
   }
   
   .hero-container {
     max-width: 80rem;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: row;
     justify-content: space-between;
+    align-items: center;
   }
   
   .hero-content {
@@ -173,6 +178,7 @@
   .hero img {
     width: 50%;
     max-width: 36rem;
+    object-fit: cover;
   }
   
   /* About section */
@@ -200,6 +206,12 @@
     width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   .about-content p {
@@ -259,6 +271,7 @@
     transform: translateY(0);
     transition: transform 0.2s;
     text-align: center;
+    margin: 0 auto;
   }
   
   .doctor-card:hover {
@@ -375,7 +388,7 @@
     background-color: #8AB9D5;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
-    padding: 5rem 1.5rem;
+    padding: 3rem 1rem;
   }
   
   .footer-container {
@@ -392,13 +405,13 @@
   }
   
   .footer-info p {
-    font-size: 0.875rem;
     margin-bottom: 0.5rem;
   }
   
   .contact-info h3 {
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .contact-details {
@@ -418,11 +431,7 @@
   }
   
   .contact-item p {
-    font-size: 0.875rem;
-  }
-  
-  .contact-item .bold {
-    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
   
   /* Responsive styles */
@@ -432,28 +441,58 @@
     }
   }
   
-  @media (max-width: 768px) {
-    .menu-icon {
-      display: block;
-    }
-  
-    .nav-menu {
-      display: none;
-      position: fixed;
-      top: 4rem;
-      left: 0;
-      right: 0;
-      background-color: white;
-      padding: 1rem;
-      flex-direction: column;
-      align-items: stretch;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-    .nav-menu.active {
+  @media (min-width: 768px) {
+    .nav-links {
       display: flex;
     }
+
+    .menu-btn {
+      display: none;
+    }
   
+    .hero-container {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .hero-content {
+      order: 1;
+    }
+  
+    .hero img {
+      order: 2;
+    }
+  
+    .about-container {
+      grid-template-columns: 1fr;
+    }
+
+    .about img {
+      grid-column: 1;
+    }
+
+    .about-content {
+      grid-column: 2;
+    }
+  
+    .doctors-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-info {
+      grid-column: 1;
+    }
+
+    .contact-info {
+      grid-column: 2;
+    }
+  }
+
+  @media (max-width: 768px) {  
     .hero-container {
       flex-direction: column;
       text-align: center;
@@ -467,6 +506,14 @@
     .about-container {
       grid-template-columns: 1fr;
     }
+
+    .about img {
+      margin-bottom: 2rem;
+    }
+
+    .about-content {
+      margin-top: 0;
+    }
   
     .doctors-grid {
       grid-template-columns: 1fr;
@@ -475,7 +522,15 @@
     .footer-container {
       grid-template-columns: 1fr;
     }
-  }
+
+    .footer-info {
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      margin-top: 0;
+    }
+  }  
   
   /* Animation */
   @keyframes fadeIn {

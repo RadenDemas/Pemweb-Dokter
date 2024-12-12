@@ -4,42 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homepage Sebelum Login</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">
-        <img src="../../../Assets/logo rumah sakit.svg" alt="Klinik Logo">
-      </a>
-
-      <div class="menu-icon">
-        <i class='bx bx-menu'></i>
-      </div>
-
-      <div class="nav-menu">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/about" class="nav-link">About Us</a>
-        <a href="/doctors" class="nav-link">Dokter</a>
-        <a href="/booking" class="nav-link">Booking</a>
-        <a href="/articles" class="nav-link">Artikel</a>
-        <a href="/contact" class="nav-link">Kontak</a>
-        
-        <div class="profile-menu">
-          <button class="profile-btn">
-            <img src="../../../Assets/profile_icon.svg" alt="profile icon">
-          </button>
-          <div class="profile-dropdown">
-            <a href="/account" class="dropdown-item">Lihat Akun</a>
-            <a href="/logout" class="dropdown-item">Sign Out</a>
+      <div class="nav-container">
+          <div class="nav-left">
+              <img src="../../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo">
+              <div class="nav-links">
+                  <a href="#">Home</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Dokter</a>
+                  <a href="#">Booking</a>
+                  <a href="#">Artikel</a>
+                  <a href="#">Kontak</a>
+              </div>
           </div>
-        </div>
-        
-        <a href="/signin" class="signin-btn">Sign In</a>
+          <div class="nav-right">
+              <a href="#" class="profile-btn">
+                  <img src="../../../Assets/profile_icon.svg" alt="Profile" class="profile-icon">
+              </a>
+              <button class="signin-btn">Sign In</button>
+              <button class="menu-btn" id="menuBtn">
+                  <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">
+              </button>
+          </div>
       </div>
-    </div>
+      <div class="mobile-menu" id="mobileMenu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Dokter</a>
+          <a href="#">Booking</a>
+          <a href="#">Artikel</a>
+          <a href="#">Kontak</a>
+      </div>
   </nav>
 
   <main>
@@ -131,8 +131,8 @@
           <img src="../../../Assets/logo rumah sakit.svg" alt="Klinik Logo">
           <p>Jl. Cahaya Sejahtera</p>
           <p>No. 88, Harapan Indah,</p>
-          <p>Kec. Mentari Baru,<br>
-            Jakarta</p>
+          <p>Kec. Mentari Baru,</p>
+          <p>Jakarta</p>
         </div>
         
         <div class="contact-info">
@@ -141,24 +141,21 @@
             <div class="contact-item">
               <img src="../../../Assets/logo ambulan.svg" alt="ambulan">
               <div>
-                <p>Ambulans & Gawat Darurat</p>
-                <p class="bold">0266 666 0 000</p>
+                <p>Ambulans & Gawat Darurat 0266 666 0 000</p>
               </div>
             </div>
             
             <div class="contact-item">
               <img src="../../../Assets/logo telpon.svg" alt="telpon">
               <div>
-                <p>Pusat Panggilan</p>
-                <p class="bold">0266 555 0 000</p>
+                <p>Pusat Panggilan 0255 555 0 000</p>
               </div>
             </div>
             
             <div class="contact-item">
               <img src="../../../Assets/logo whatsapp.svg" alt="whatsapp">
               <div>
-                <p>Whatsapp</p>
-                <p class="bold">+6288888888888</p>
+                <p>Whatsapp 628888888888</p>
               </div>
             </div>
             
@@ -175,6 +172,6 @@
     </footer>
   </main>
 
-  <script src="beranda.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
