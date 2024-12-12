@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booking2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="../../../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo">
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Dokter</a>
+                    <a href="#">Booking</a>
+                    <a href="#">Artikel</a>
+                    <a href="#">Kontak</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="profile-btn">
+                    <img src="../../../../Assets/profile_icon.svg" alt="Profile" class="profile-icon">
+                </a>
+                <button class="logout-btn">Log Out</button>
+                <button class="menu-btn" id="menuBtn">
+                    <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Dokter</a>
+            <a href="#">Booking</a>
+            <a href="#">Artikel</a>
+            <a href="#">Kontak</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>BOOKING DOKTER</h1>
+        
+        <div class="content-grid">
+            <div class="doctor-card">
+                <h2>Penyakit Dalam</h2>
+                <img src="../../../../Assets/dokter3.jpg" alt="dr. Chae Song Hwa">
+                <h3>dr. Chae Song Hwa,</h3>
+                <p>Sp. A.</p>
+            </div>
+
+            <div class="booking-form">
+                <div class="date-section">
+                    <h3>Tanggal Kedatangan</h3>
+                    <div class="date-buttons" id="dateButtons"></div>
+                </div>
+
+                <div class="time-section">
+                    <h3>Waktu</h3>
+                    <div class="time-buttons" id="timeButtons"></div>
+                    <p class="note">*Waktu konsultasi dapat berubah bergantung pada konsultasi pasien sebelum Anda</p>
+                </div>
+
+                <button class="book-btn">BOOK</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="../../../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
+                <p>Jl. Cahaya Sejahtera</p>
+                <p>No. 88, Harapan Indah,</p>
+                <p>Kec. Mentari Baru,</p>
+                <p>Jakarta</p>
+            </div>
+            <div class="footer-right">
+                <h3>Hubungi Kami</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="../../../../Assets/logo ambulan.svg" alt="ambulan">
+                        <div>
+                            <p>Ambulans & Gawat Darurat 0266 666 0 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../../../Assets/logo telpon.svg" alt="telepon">
+                        <div>
+                            <p>Pusat Panggilan 0255 555 0 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../../../Assets/logo whatsapp.svg" alt="whatsapp">
+                        <div>
+                            <p>Whatsapp 628888888888</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../../../Assets/logo email.svg" alt="email">
+                        <div>
+                            <p>infohospital@pelitaharapan.co.id</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="booking2.js"></script>
+</body>
+</html>
