@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneInput = document.getElementById('phone');
     const togglePassword = document.querySelector('.toggle-password');
 
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = '../sign-in/index.html';
+        });
+    });
+
     // Password visibility toggle
     togglePassword.addEventListener('click', function() {
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';

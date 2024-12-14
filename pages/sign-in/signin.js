@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('fa-eye-slash');
     });
 
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("signinForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = '../homepage/index.html';
+        });
+    });
+
     // Email validation
     emailInput.addEventListener('input', function() {
         const errorElement = this.nextElementSibling;
