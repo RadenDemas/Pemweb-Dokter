@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/H1D023069_Khonsaa Hilmi Mufiida/prak pemweb 1/PROJECT PRAK PEMWEB 1/Pemweb-Dokter/pages/artikel/per-artikel",
+      "program": "c:/H1D023069_Khonsaa Hilmi Mufiida/prak pemweb 1/PROJECT PRAK PEMWEB 1/Pemweb-Dokter/pages/artikel/per-artikel/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

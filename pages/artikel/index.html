@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Pelita Harapan">
+        </div>
+        
+        <div class="nav-links">
+            <a href="../homepage/index.html">Home</a>
+            <a href="../about-us/index.html">About Us</a>
+            <a href="../dokter/index.html">Dokter</a>
+            <a href="../booking/index.html">Booking</a>
+            <a href="../artikel/index.html">Artikel</a>
+            <a href="#hubungi-kami">Kontak</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/profile" class="profile-icon">
+                <img src="../../Assets/profile_icon.svg" alt="Profile">
+            </a>
+            <button class="logout-btn" id="logout-btn">Log Out</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="search-section">
+            <h1>Cari Artikel Kesehatan di Pelita Harapan Clinic</h1>
+            <p>Untuk mencari artikel, Anda dapat mengetik keyword artikel di kolom pencarian</p>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Cari artikel di sini" id="search-input">
+                <button class="search-icon">🔍</button>
+                <div class="search-dropdown" id="search-dropdown"></div>
+            </div>
+        </section>
+
+        <section class="articles-container">
+            <!-- Article cards will be dynamically added here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
+                <p>Jl. Cahaya Sejahtera</p>
+                <p>No. 88, Harapan Indah,</p>
+                <p>Kec. Mentari Baru,</p>
+                <p>Jakarta</p>
+            </div>
+            <div class="footer-right">
+                <h3 id="hubungi-kami">Hubungi Kami</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="../../Assets/logo ambulan.svg" alt="ambulan">
+                        <div>
+                            <p>Ambulans & Gawat Darurat 0266 666 0 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../Assets/logo telpon.svg" alt="telepon">
+                        <div>
+                            <p>Pusat Panggilan 0255 555 0 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../Assets/logo whatsapp.svg" alt="whatsapp">
+                        <div>
+                            <p>Whatsapp 628888888888</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../Assets/logo email.svg" alt="email">
+                        <div>
+                            <p>infohospital@pelitaharapan.co.id</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="logout-modal">
+        <div class="modal-content">
+            <p>Yakin ingin Log out dari akun ini?</p>
+            <div class="modal-buttons">
+                <button class="cancel-btn">Batal</button>
+                <a href="../homepage/sebelum-login/index.html" class="confirm-btn">Iya</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="alert">Anda sudah berhasil Log out</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

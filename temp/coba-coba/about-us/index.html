@@ -6,11 +6,12 @@
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Pelita Harapan">
+            <img src="../../../Assets/logo rumah sakit.svg" alt="Klinik Pelita Harapan">
         </div>
         <div class="nav-links">
             <a href="#home" class="active">Home</a>
@@ -27,11 +28,12 @@
                 <span></span>
             </button>
             <a href="/profile" class="profile-icon">
-                <img src="../../Assets/profile_icon.svg" alt="Profile">
+                <img src="../../../Assets/profile_icon.svg" alt="Profile">
             </a>
             <button class="logout-btn" id="logout-btn">Log Out</button>
         </div>
     </nav>
+
     <main>
         <section class="about-us">
             <h1>About Us</h1>
@@ -39,7 +41,7 @@
             <!-- Top section with image and description -->
             <div class="top-content">
                 <div class="image-section">
-                    <img src="../../Assets/rumah sakit.jpg" alt="Klinik Pelita Harapan Building">
+                    <img src="../../../Assets/rumah sakit.jpg" alt="Klinik Pelita Harapan Building">
                 </div>
                 <div class="description-section">
                     <p>Klinik Pelita Harapan hadir untuk menjadi pelita harapan bagi kesehatan Anda. Kami berkomitmen untuk memberikan layanan kesehatan kelas dunia dengan mengutamakan kenyamanan, kepercayaan, dan kepuasan pasien.</p>
@@ -70,63 +72,64 @@
             </div>
         </section>
     </main>
-            <footer>
-                <div class="footer-content">
-                    <div class="footer-left">
-                        <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
-                        <p>Jl. Cahaya Sejahtera</p>
-                        <p>No. 88, Harapan Indah,</p>
-                        <p>Kec. Mentari Baru,</p>
-                        <p>Jakarta</p>
-                    </div>
-                    <div class="footer-right">
-                        <h3>Hubungi Kami</h3>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <img src="../../Assets/logo ambulan.svg" alt="ambulan">
-                                <div>
-                                    <p>Ambulans & Gawat Darurat 0266 666 0 000</p>
-                                </div>
-                            </div>
-        
-                            <div class="contact-item">
-                                <img src="../../Assets/logo telpon.svg" alt="telepon">
-                                <div>
-                                    <p>Pusat Panggilan 0255 555 0 000</p>
-                                </div>
-                            </div>
-        
-                            <div class="contact-item">
-                                <img src="../../Assets/logo whatsapp.svg" alt="whatsapp">
-                                <div>
-                                    <p>Whatsapp 628888888888</p>
-                                </div>
-                            </div>
-        
-                            <div class="contact-item">
-                                <img src="../../Assets/logo email.svg" alt="email">
-                                <div>
-                                    <p>infohospital@pelitaharapan.co.id</p>
-                                </div>
-                            </div>
-        
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="../../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
+                <p>Jl. Cahaya Sejahtera</p>
+                <p>No. 88, Harapan Indah,</p>
+                <p>Kec. Mentari Baru,</p>
+                <p>Jakarta</p>
+            </div>
+            <div class="footer-right">
+                <h3>Hubungi Kami</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="../../../Assets/logo ambulan.svg" alt="ambulan">
+                        <div>
+                            <p>Ambulans & Gawat Darurat 0266 666 0 000</p>
                         </div>
                     </div>
-                </div>
-            </footer>
-        
-            <!-- Logout Modal -->
-            <div class="modal" id="logout-modal">
-                <div class="modal-content">
-                    <p>Yakin ingin Log out dari akun ini?</p>
-                    <div class="modal-buttons">
-                        <button class="cancel-btn">Batal</button>
-                        <a href="../homepage/index.html" class="confirm-btn">Iya</a>
+
+                    <div class="contact-item">
+                        <img src="../../../Assets/logo telpon.svg" alt="telepon">
+                        <div>
+                            <p>Pusat Panggilan 0255 555 0 000</p>
+                        </div>
                     </div>
+
+                    <div class="contact-item">
+                        <img src="../../../Assets/logo whatsapp.svg" alt="whatsapp">
+                        <div>
+                            <p>Whatsapp 628888888888</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="../../../Assets/logo email.svg" alt="email">
+                        <div>
+                            <p>infohospital@pelitaharapan.co.id</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        
-            <div class="alert" id="alert">Anda sudah berhasil Log out</div>
+        </div>
+    </footer>
+
+    <!-- Logout Modal -->
+    <div class="modal" id="logout-modal">
+        <div class="modal-content">
+            <p>Yakin ingin Log out dari akun ini?</p>
+            <div class="modal-buttons">
+                <button class="cancel-btn">Batal</button>
+                <a href="/login.html" class="confirm-btn">Iya</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="alert">Anda sudah berhasil Log out</div>
 
     <script src="script.js"></script>
 </body>
