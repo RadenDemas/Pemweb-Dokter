@@ -166,6 +166,11 @@ body {
   transition: background-color 0.3s;
 }
 
+.info-btn a{
+  text-decoration: none;
+  color: black;
+}
+
 .info-btn:hover {
   background-color: #f3f4f6;
 }
@@ -216,6 +221,11 @@ body {
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.read-more a{
+  text-decoration: none;
+  color:white;
 }
 
 .read-more:hover {
@@ -295,6 +305,11 @@ body {
   margin: 1rem;
   cursor: pointer;
   transition: background-color 0.2s;
+}
+
+.doctor-card button a{
+  text-decoration: none;
+  color:white;
 }
 
 .doctor-card button:hover {
