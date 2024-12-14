@@ -1,6 +1,6 @@
 const hamburger = document.getElementById('hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
-const logoutBtn = document.getElementById('logout-btn');
+const logoutBtn = document.getElementById('login-btn');
 const modal = document.getElementById('logout-modal');
 const cancelBtn = document.querySelector('.cancel-btn');
 const confirmBtn = document.querySelector('.confirm-btn');
@@ -12,7 +12,7 @@ hamburger.addEventListener('click', () => {
 });
 
 // Logout functionality
-logoutBtn.addEventListener('click', () => {
+loginBtn.addEventListener('click', () => {
     modal.style.display = 'flex';
 });
 
@@ -75,4 +75,30 @@ document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('active');
     }
+});
+
+// Profile dropdown functionality
+const profileBtn = document.querySelector('.profile-btn');
+const profileDropdown = document.querySelector('.profile-dropdown');
+
+profileBtn.addEventListener('mouseenter', () => {
+  profileDropdown.style.display = 'block';
+});
+
+profileBtn.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!profileDropdown.matches(':hover')) {
+      profileDropdown.style.display = 'none';
+    }
+  }, 100);
+});
+
+profileDropdown.addEventListener('mouseleave', () => {
+  profileDropdown.style.display = 'none';
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("login-btn").addEventListener("click", function() {
+        window.location.href = '../sign-in/index.html';
+    });
 });
