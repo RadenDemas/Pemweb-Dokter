@@ -1,5 +1,6 @@
 <?php
     require "..\..\scripts\php\db.php";
+    global $conn;
     if(isset($_POST['register'])){
         $nama = $_POST['nama'];
         $email = $_POST['email'];
