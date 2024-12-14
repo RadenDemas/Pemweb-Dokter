@@ -63,25 +63,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Form submission
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Validate all required fields
-        const inputs = form.querySelectorAll('input[required], select[required]');
-        let isValid = true;
-
-        inputs.forEach(input => {
-            if (!input.value) {
-                input.classList.add('error');
-                isValid = false;
-            }
-        });
-
-        if (isValid) {
-            // Redirect to homepage
-            window.location.href = 'homepage.html';
-        }
-    });
+    // form.addEventListener('submit', function(e) {
+    //     e.preventDefault();
+    //
+    //     // Validate all required fields
+    //     const inputs = form.querySelectorAll('input[required], select[required]');
+    //     let isValid = true;
+    //
+    //     inputs.forEach(input => {
+    //         if (!input.value) {
+    //             input.classList.add('error');
+    //             isValid = false;
+    //         }
+    //     });
+    //
+    //     if (isValid) {
+    //         // Redirect to homepage
+    //         window.location.href = 'homepage.html';
+    //     }
+    // });
 
     // Alert function
     function showAlert(message) {
