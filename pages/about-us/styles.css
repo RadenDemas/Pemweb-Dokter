@@ -232,13 +232,21 @@ footer {
     cursor: pointer;
 }
 
+.cancel-btn, .confirm-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .cancel-btn {
     background-color: #ccc;
 }
 
 .confirm-btn {
-    background-color: #ff0000;
+    background-color: #8AB9D5;
     color: white;
+    text-decoration: none;
 }
 
 /* Alert Styles */
