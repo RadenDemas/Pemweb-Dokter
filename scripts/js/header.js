@@ -7,15 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmLogout = document.getElementById('confirmLogout');
     const logoutAlert = document.getElementById('logoutAlert');
 
-    // Mendapatkan elemen tombol
-    const loginButton = document.querySelector('.login-btn');
-
     // Menambahkan event listener untuk klik
-    loginButton.addEventListener('click', function() {
-        // Mengarahkan ke halaman lain
-        window.location.href = '../sign-in/index.html';
-        window.location.href = '../../pages/sign-in/index.html';
-    });
 
     // Hamburger menu
     hamburger.addEventListener('click', () => {
