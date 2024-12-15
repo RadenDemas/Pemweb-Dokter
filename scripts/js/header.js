@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (countdown <= 0) {
                 clearInterval(timer);
-                window.location.href = 'index.html';
+                window.location.href = '../scripts/php/kill.php   ';
             }
         }, 1000);
     });

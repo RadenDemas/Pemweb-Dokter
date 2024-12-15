@@ -4,7 +4,7 @@
     global $conn;
 
     if($_SESSION['login'] == false){
-        header("location: index.php");
+        header("location: signin.php");
     }
 
     $id_user = $_SESSION['id'];
@@ -17,6 +17,7 @@
         $selectedTime = $_POST['selectedTime'] ?? null;
         $id_dokter = $_POST['id_dokter'] ?? null;
         $nama_dokter = $_POST['nama_dokter'] ?? null;
+        $spesialis = $_POST['spesialis'] ?? null;
 
         // Validasi input
         if ($selectedDate && $selectedTime) {
@@ -24,8 +25,15 @@
             $result = mysqli_query($conn, $query);
             $row = $result->fetch_assoc();
             $total_bookings = $row['total_bookings'] + 1;
-
-            $booking_number = "A-" . str_pad((int) $total_bookings, 3, "0", STR_PAD_LEFT);
+            if($spesialis=="Penyakit Dalam"){
+                $booking_number = "PD-" . str_pad((int) $total_bookings, 3, "0", STR_PAD_LEFT);
+            }
+            elseif ($spesialis=="Anak"){
+                $booking_number = "DA-" . str_pad((int) $total_bookings, 3, "0", STR_PAD_LEFT);
+            }
+            elseif ($spesialis=="Psikologi"){
+                $booking_number = "PS-" . str_pad((int) $total_bookings, 3, "0", STR_PAD_LEFT);
+            }
 
             $query = "INSERT INTO booking
                     (id_user, id_dokter, no_booking, tanggal, jam, tanggal_pemesanan)
@@ -52,43 +60,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Berhasil</title>
+    <link rel="stylesheet" href="../styles/struk.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/alert-modal.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../pages/booking/after-booking/styles.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-left">
-            <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo">
+<header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.php" class="logo">
+                <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo">
+            </a>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Dokter</a>
-                <a href="#">Booking</a>
-                <a href="#">Artikel</a>
-                <a href="#">Kontak</a>
+                <a href="index.php" class="active">Home</a>
+                <a href="about.php">About Us</a>
+                <a href="dokter.php">Dokter</a>
+                <a href="booking.php">Booking</a>
+                <a href="artikel.php">Artikel</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <div class="nav-buttons">
+                <?php if($_SESSION['login'] == false): ?>
+                    <a href="signin.php" class="login-btn">Log In</a>
+                <?php elseif ($_SESSION['login']==true):?>
+                    <div class="profile-btn">
+                        <img src="../Assets/icon-profile.svg" alt="Profile">
+                        <div class="dropdown-menu">
+                            <a href="profile.php">Lihat Akun</a>
+                            <a href="edit-pengguna.php">Edit Akun</a>
+                            <a href="#" id="logout-btn">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <?php endif;?>
             </div>
         </div>
-        <div class="nav-right">
-            <a href="#" class="profile-btn">
-                <img src="../Assets/profile_icon.svg" alt="Profile" class="profile-icon">
-            </a>
-            <button class="logout-btn">Log Out</button>
-            <button class="menu-btn" id="menuBtn">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">
-            </button>
-        </div>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Dokter</a>
-        <a href="#">Booking</a>
-        <a href="#">Artikel</a>
-        <a href="#">Kontak</a>
-    </div>
-</nav>
-
+    </nav>
+</header>
 <main>
     <div class="booking-container">
         <?php while ($row = mysqli_fetch_array($rows)): ?>
@@ -111,7 +127,7 @@
             </div>
             <div class="detail-row">
                 <span class="label">Waktu</span>
-                <span class="value">(<?php echo $row['jam']?>>)</span>
+                <span class="value">(<?php echo $row['jam']?>)</span>
             </div>
             <div class="detail-row">
                 <span class="label">Lokasi</span>
@@ -126,7 +142,7 @@
     </div>
 </main>
 
-<footer>
+<footer id="kontak">
     <div class="footer-content">
         <div class="footer-left">
             <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
@@ -165,11 +181,28 @@
                         <p>infohospital@pelitaharapan.co.id</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </footer>
+
+<div id="logoutModal" class="modal">
+    <div class="modal-content">
+        <p>Yakin ingin Log out dari akun ini?</p>
+        <div class="modal-buttons">
+            <button id="cancelLogout">Batal</button>
+            <button id="confirmLogout">Iya</button>
+        </div>
+    </div>
+</div>
+
+<div id="logoutAlert" class="alert">
+    <p>Anda sudah berhasil Log out</p>
+    <div class="countdown">3</div>
+</div>
+
+<script src="../scripts/js/header.js"></script>
+<script src="../scripts/js/alert-modal.js"></script>
 <script src="../pages/booking/after-booking/script.js"></script>
 </body>
 </html>

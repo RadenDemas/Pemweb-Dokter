@@ -5,7 +5,7 @@ session_start();
 if(isset($_POST['login'])){
     $email = $_POST['email'];
     $pass = $_POST['password'];
-    $query = "SELECT id, email, password, nama FROM users WHERE email = '$email'";
+    $query = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($conn,$query);
     if(mysqli_num_rows($result) > 0){
         $user = mysqli_fetch_assoc($result);
@@ -13,8 +13,12 @@ if(isset($_POST['login'])){
             var_dump($user);
             $_SESSION['login'] = true;
             $_SESSION['nama'] = $user['nama'];
-            $_SESSION['id'] = $user['id'];
-            header("Location: ..\homepage\index-beranda.html");
+            $_SESSION['id'] = $user['id_user'];
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['ttl'] = $user['ttl'];
+            $_SESSION['no_hp'] = $user['no_hp'];
+            $_SESSION['password'] = $user['password'];
+            header("Location: ..\homepage\homepage.php");
             exit;
         }
         else {
@@ -49,21 +53,21 @@ if(isset($_POST['login'])){
             <form id="signinForm" action="" method="post">
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Alamat Email" required>
+                    <input type="email" name="email" id="email" placeholder="Alamat Email" required>
                     <small class="error-message"></small>
                 </div>
 
                 <div class="input-group">
                     <label for="password">Password</label>
                     <div class="password-container">
-                        <input type="password" id="password" placeholder="Password" maxlength="15" required>
+                        <input type="password" name="password" id="password" placeholder="Password" maxlength="15" required>
                         <i class="far fa-eye-slash toggle-password"></i>
                     </div>
                     <small class="error-message"></small>
                 </div>
 
                 <p class="signup-link">Don't have an account? <a href="../sign-up/index.php">Sign Up</a></p>
-                <button type="submit" class="signin-btn">Sign In</button>
+                <button type="submit" class="signin-btn" name="login">Sign In</button>
             </form>
         </div>
     </div>

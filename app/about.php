@@ -8,34 +8,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="../pages/about-us/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="styles" href="../styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar">
-    <div class="logo">
-        <img src="../Assets/logo rumah sakit.svg" alt="Klinik Pelita Harapan">
-    </div>
-    <div class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#dokter">Dokter</a>
-        <a href="#booking">Booking</a>
-        <a href="#artikel">Artikel</a>
-        <a href="#kontak">Kontak</a>
-    </div>
-    <div class="nav-buttons">
-        <button class="hamburger" id="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <a href="/profile" class="profile-icon">
-            <img src="../Assets/profile_icon.svg" alt="Profile">
-        </a>
-        <button class="logout-btn" id="logout-btn">Log Out</button>
-    </div>
-</nav>
+<header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.php" class="logo">
+                <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.php" class="active">Home</a>
+                <a href="about.php">About Us</a>
+                <a href="dokter.php">Dokter</a>
+                <a href="booking.php">Booking</a>
+                <a href="artikel.php">Artikel</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <div class="nav-buttons">
+                <?php if($_SESSION['login'] == false): ?>
+                    <button class="login-btn"><a href="signin.php">Log In</a></button>
+                <?php elseif ($_SESSION['login']==true):?>
+                    <div class="profile-btn">
+                        <img src="../Assets/icon-profile.svg" alt="Profile">
+                        <div class="dropdown-menu">
+                            <a href="profile.php">Lihat Akun</a>
+                            <a href="edit-pengguna.php">Edit Akun</a>
+                            <a href="#" id="logout-btn">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <?php endif;?>
+            </div>
+        </div>
+    </nav>
+</header>
 <main>
     <section class="about-us">
         <h1>About Us</h1>
@@ -43,7 +56,7 @@
         <!-- Top section with image and description -->
         <div class="top-content">
             <div class="image-section">
-                <img src="../Assets/rumah sakit.jpg" alt="Klinik Pelita Harapan Building">
+                <img src="../../Assets/rumah sakit.jpg" alt="Klinik Pelita Harapan Building">
             </div>
             <div class="description-section">
                 <p>Klinik Pelita Harapan hadir untuk menjadi pelita harapan bagi kesehatan Anda. Kami berkomitmen untuk memberikan layanan kesehatan kelas dunia dengan mengutamakan kenyamanan, kepercayaan, dan kepuasan pasien.</p>
@@ -74,10 +87,10 @@
         </div>
     </section>
 </main>
-<footer>
+<footer id="kontak">
     <div class="footer-content">
         <div class="footer-left">
-            <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
+            <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
             <p>Jl. Cahaya Sejahtera</p>
             <p>No. 88, Harapan Indah,</p>
             <p>Kec. Mentari Baru,</p>
@@ -87,28 +100,28 @@
             <h3>Hubungi Kami</h3>
             <div class="contact-details">
                 <div class="contact-item">
-                    <img src="../Assets/logo ambulan.svg" alt="ambulan">
+                    <img src="../../Assets/logo ambulan.svg" alt="ambulan">
                     <div>
                         <p>Ambulans & Gawat Darurat 0266 666 0 000</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
-                    <img src="../Assets/logo telpon.svg" alt="telepon">
+                    <img src="../../Assets/logo telpon.svg" alt="telepon">
                     <div>
                         <p>Pusat Panggilan 0255 555 0 000</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
-                    <img src="../Assets/logo whatsapp.svg" alt="whatsapp">
+                    <img src="../../Assets/logo whatsapp.svg" alt="whatsapp">
                     <div>
                         <p>Whatsapp 628888888888</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
-                    <img src="../Assets/logo email.svg" alt="email">
+                    <img src="../../Assets/logo email.svg" alt="email">
                     <div>
                         <p>infohospital@pelitaharapan.co.id</p>
                     </div>

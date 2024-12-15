@@ -85,42 +85,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Booking</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/alert-modal.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../pages/booking/per-booking/booking1/styles.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-left">
-            <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo">
+<header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.php" class="logo">
+                <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo">
+            </a>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Dokter</a>
-                <a href="#">Booking</a>
-                <a href="#">Artikel</a>
-                <a href="#">Kontak</a>
+                <a href="index.php" class="active">Home</a>
+                <a href="about.php">About Us</a>
+                <a href="dokter.php">Dokter</a>
+                <a href="booking.php">Booking</a>
+                <a href="artikel.php">Artikel</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <div class="nav-buttons">
+                <?php if($_SESSION['login'] == false): ?>
+                    <a href="signin.php" class="login-btn">Log In</a>
+                <?php elseif ($_SESSION['login']==true):?>
+                    <div class="profile-btn">
+                        <img src="../Assets/icon-profile.svg" alt="Profile">
+                        <div class="dropdown-menu">
+                            <a href="profile.php">Lihat Akun</a>
+                            <a href="edit-pengguna.php">Edit Akun</a>
+                            <a href="#" id="logout-btn">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <?php endif;?>
             </div>
         </div>
-        <div class="nav-right">
-            <a href="#" class="profile-btn">
-                <img src="../Assets/profile_icon.svg" alt="Profile" class="profile-icon">
-            </a>
-            <button class="logout-btn">Log Out</button>
-            <button class="menu-btn" id="menuBtn">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">
-            </button>
-        </div>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Dokter</a>
-        <a href="#">Booking</a>
-        <a href="#">Artikel</a>
-        <a href="#">Kontak</a>
-    </div>
-</nav>
-
+    </nav>
+</header>
 <main>
     <h1>BOOKING DOKTER</h1>
 
@@ -136,6 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form action="struk.php" method="POST">
                 <input type="hidden" name="id_dokter" value="<?php echo $id_dokter?>">
                 <input type="hidden" name="nama_dokter" value="<?php echo $row['nama_dokter'];?>">
+                <input type="hidden" name="spesialis" value="<?php echo $row['spesialis'];?>">
                 <?php endwhile;?>
                 <div class="date-section">
                     <h3>Tanggal Kedatangan</h3>
@@ -155,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="time-section">
-                    <h3>Waktu</h3>
+                    <h3 style="margin-top: 1.5em">Waktu</h3>
                     <div class="time-buttons" id="timeButtons">
                         <p>Silakan pilih tanggal terlebih dahulu.</p>
                     </div>
@@ -164,13 +172,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <!-- Tombol submit -->
-            <button type="submit" class="book-btn">BOOK</button>
+            <button type="submit" class="book-btn" style="margin-top: 1.5em">BOOK</button>
             </form>
         </div>
     </div>
 </main>
 
-<footer>
+<footer id="kontak">
     <div class="footer-content">
         <div class="footer-left">
             <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
@@ -209,11 +217,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p>infohospital@pelitaharapan.co.id</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </footer>
+
+<div id="logoutModal" class="modal">
+    <div class="modal-content">
+        <p>Yakin ingin Log out dari akun ini?</p>
+        <div class="modal-buttons">
+            <button id="cancelLogout">Batal</button>
+            <button id="confirmLogout">Iya</button>
+        </div>
+    </div>
+</div>
+
+<div id="logoutAlert" class="alert">
+    <p>Anda sudah berhasil Log out</p>
+    <div class="countdown">3</div>
+</div>
+
+<script src="../scripts/js/header.js"></script>
+<script src="../scripts/js/alert-modal.js"></script>
 
 <script>
     // Fungsi untuk konversi tanggal ke format ISO (YYYY-MM-DD)

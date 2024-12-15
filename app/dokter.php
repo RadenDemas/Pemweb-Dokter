@@ -1,5 +1,6 @@
 <?php
     include "../scripts/php/db.php";
+    session_start();
     global $conn;
     $query = "
             SELECT 
@@ -56,42 +57,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelita Harapan Clinic</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../pages/dokter/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/alert-modal.css">
+    <link rel="stylesheet" href="../styles/dokter.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-left">
-            <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo">
+<header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.php" class="logo">
+                <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo">
+            </a>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Dokter</a>
-                <a href="#">Booking</a>
-                <a href="#">Artikel</a>
-                <a href="#">Kontak</a>
+                <a href="index.php" class="active">Home</a>
+                <a href="about.php">About Us</a>
+                <a href="dokter.php">Dokter</a>
+                <a href="booking.php">Booking</a>
+                <a href="artikel.php">Artikel</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <div class="nav-buttons">
+                <?php if($_SESSION['login'] == false): ?>
+                    <a href="signin.php" class="login-btn">Log In</a>
+                <?php elseif ($_SESSION['login']==true):?>
+                    <div class="profile-btn">
+                        <img src="../Assets/icon-profile.svg" alt="Profile">
+                        <div class="dropdown-menu">
+                            <a href="profile.php">Lihat Akun</a>
+                            <a href="edit-pengguna.php">Edit Akun</a>
+                            <a href="#" id="logout-btn">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <?php endif;?>
             </div>
         </div>
-        <div class="nav-right">
-            <a href="#" class="profile-button">
-                <img src="../Assets/profile_icon.svg" alt="Profile" class="profile-icon">
-            </a>
-            <button class="logout-btn">Log Out</button>
-            <button class="menu-btn" id="menuBtn">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">
-            </button>
-        </div>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Dokter</a>
-        <a href="#">Booking</a>
-        <a href="#">Artikel</a>
-        <a href="#">Kontak</a>
-    </div>
-</nav>
-
+    </nav>
+</header>
 <main>
     <h1>Cari Jadwal Dokter di Pelita Harapan Clinic</h1>
     <p class="subtitle">Untuk mencari dokter, Anda dapat memilih nama dokter berdasarkan spesialis</p>
@@ -121,14 +128,14 @@
                             <?php endforeach; ?>
                         </div>
                     </div>
-                    <button class="profile-btn"><a style="text-decoration: none;color: white" href="profile-dokter.php?id=<?php echo $data['id_dokter'];?>">Lihat Profil</a></button>
+                    <a href="profile-dokter.php?id=<?php echo $data['id_dokter'];?>" class="profile-dokter-btn" style="text-decoration:none">Lihat Profil</a>
                 </div>
             </div>
         <?php endforeach;?>
     </div>
 </main>
 
-<footer>
+<footer id="kontak">
     <div class="footer-content">
         <div class="footer-left">
             <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
@@ -167,12 +174,27 @@
                         <p>infohospital@pelitaharapan.co.id</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </footer>
 
-<script src="../pages/dokter/script.js"></script>
+<div id="logoutModal" class="modal">
+    <div class="modal-content">
+        <p>Yakin ingin Log out dari akun ini?</p>
+        <div class="modal-buttons">
+            <button id="cancelLogout">Batal</button>
+            <button id="confirmLogout">Iya</button>
+        </div>
+    </div>
+</div>
+
+<div id="logoutAlert" class="alert">
+    <p>Anda sudah berhasil Log out</p>
+    <div class="countdown">3</div>
+</div>
+
+<script src="../scripts/js/header.js"></script>
+<script src="../scripts/js/alert-modal.js"></script>
 </body>
 </html>
