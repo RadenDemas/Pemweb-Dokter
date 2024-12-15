@@ -1,40 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    let isMenuOpen = false;
-  
-    menuBtn.addEventListener('click', () => {
-        isMenuOpen = !isMenuOpen;
-        mobileMenu.classList.toggle('active');
-        menuBtn.innerHTML = isMenuOpen 
-            ? '<img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/x.svg" alt="Close" class="menu-icon">'
-            : '<img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg" alt="Menu" class="menu-icon">';
-    });
-  
-    // Close mobile menu when clicking outside
-      document.addEventListener('click', (e) => {
-          if (!navMenu.contains(e.target) && !menuIcon.contains(e.target)) {
-              navMenu.classList.remove('active');
-          }
-      });
-  
-      // Close mobile menu when clicking on a menu item
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target.tagName === 'A') {
-        mobileMenu.classList.remove('active');
-      }
-    });
-  
     // Date and Time data
     const dates = [
-        { date: 'Kam, 5 Des', available: true },
+        { date: 'Kam, 5 Des', available: false },
         { date: 'Jum, 6 Des', available: false },
-        { date: 'Sab, 7 Des', available: true },
+        { date: 'Sab, 7 Des', available: false },
         { date: 'Min, 8 Des', available: false },
-        { date: 'Sen, 9 Des', available: false },
-        { date: 'Sel, 10 Des', available: true },
-        { date: 'Rab, 11 Des', available: false }
+        { date: 'Sen, 9 Des', available: true },
+        { date: 'Sel, 10 Des', available: false },
+        { date: 'Rab, 11 Des', available: true }
     ];
   
     const times = [
@@ -44,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { time: '11.00 - 12.00', available: true }
     ];
   
-    let selectedDate = 'Kam, 5 Des';
+    let selectedDate = 'Sen, 9 Des';
     let selectedTime = '08.00 - 09.00';
   
     // Render date buttons

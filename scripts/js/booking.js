@@ -18,15 +18,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
   
-      // Profile button click handlers
-      const bookingBtns = document.querySelectorAll('.booking-btn');
-      bookingBtns.forEach((btn, index) => {
-          btn.addEventListener('click', () => {
-              const bookingPages = [
-                  '../../pages/booking/per-booking/booking1/index.html',
-                  '../../pages/booking/per-booking/booking2/index.html',
-                  '../../pages/booking/per-booking/booking3/index.html'
-              ];
-              window.location.href = bookingPages[index];
-          });
-      });
+    const bookingBtns = document.querySelectorAll('.booking-btn');
+    bookingBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const bookingPages = [
+                '../../pages/booking/per-booking/booking1/index.html',
+                '../../pages/booking/per-booking/booking2/index.html',
+                '../../pages/booking/per-booking/booking3/index.html'
+            ];
+            window.location.href = bookingPages[index];
+        });
+    });

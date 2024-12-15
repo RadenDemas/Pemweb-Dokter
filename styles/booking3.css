@@ -11,122 +11,6 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation */
-.navbar {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 1rem 1.5rem;
-}
-
-.nav-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  height: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 5.0rem;
-  width: auto;
-}
-
-.nav-links {
-  margin-left: 2.5rem;
-  display: none;
-  transition: color 0.2s;
-  text-decoration: none;
-}
-
-.nav-links a {
-  color: #111827;
-  text-decoration: none;
-  margin-right: 2rem;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover {
-  color: #3b82f6;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.profile-btn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 9999px;
-  transition: background-color 0.2s;
-}
-
-.profile-btn:hover {
-  background-color: #f3f4f6;
-}
-
-.profile-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.logout-btn {
-  background-color: #7FBCD2;
-  color: black;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.375rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.logout-btn:hover {
-  background-color: #3b82f6;
-}
-
-.menu-btn {
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.mobile-menu {
-  display: none;
-  padding: 0.5rem;
-  background-color: white;
-}
-
-.mobile-menu.active {
-  display: block;
-}
-
-.mobile-menu a {
-  display: block;
-  padding: 0.75rem;
-  color: #111827;
-  text-decoration: none;
-}
-
 /* Main Content */
 main {
   max-width: 1280px;
@@ -269,55 +153,11 @@ h1 {
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.2s;
+  text-decoration: none;
 }
 
 .book-btn:hover {
   background-color: #3b82f6;
-}
-
-/* Footer */
-footer {
-  background-color: #8ab9d5;
-  color: black;
-  margin-top: 4rem;
-  padding: 3rem 1rem;
-  border-top-right-radius: 100px;
-  border-top-left-radius: 100px;
-}
-
-.footer-content {
-  max-width: 80rem;
-  margin: 0 auto;
-  display: grid;
-  gap: 3rem;
-}
-
-.logo-footer {
-  height: 6rem;
-  margin-bottom: 1.5rem;
-}
-
-.footer-left p,
-.footer-right p {
-  margin-bottom: 0.5rem;
-}
-
-.footer-right h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 /* Media Queries */
