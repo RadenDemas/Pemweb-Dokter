@@ -1,16 +1,18 @@
 const hamburger = document.getElementById('hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
-const logoutBtn = document.getElementById('logout-btn');
+const logoutBtn = document.getElementById('login-btn');
 const modal = document.getElementById('logout-modal');
 const cancelBtn = document.querySelector('.cancel-btn');
 const confirmBtn = document.querySelector('.confirm-btn');
 const alert = document.getElementById('alert');
 
+// Toggle mobile menu
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-logoutBtn.addEventListener('click', () => {
+// Logout functionality
+loginBtn.addEventListener('click', () => {
     modal.style.display = 'flex';
 });
 
@@ -18,27 +20,41 @@ cancelBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
 
-confirmBtn.addEventListener('click', () => {
-    // Show alert
-    const alert = document.createElement('div');
-    alert.className = 'alert';
-    alert.textContent = 'Anda sudah berhasil Log out';
-    document.body.appendChild(alert);
+// Show alert and handle logout
+function showLogoutAlert() {
+    return new Promise((resolve) => {
+        const alert = document.createElement('div');
+        alert.className = 'alert';
+        alert.textContent = 'Anda sudah berhasil Log out';
+        alert.style.opacity = '0';
+        alert.style.transition = 'opacity 0.3s ease-in-out';
+        document.body.appendChild(alert);
 
-    // Animate alert
-    setTimeout(() => {
-        alert.style.top = '20px';
-    }, 100);
-
-    // Hide alert and redirect
-    setTimeout(() => {
-        alert.style.top = '-100px';
+        // Fade in
         setTimeout(() => {
-            window.location.href = '../homepage/index.html';
-        }, 300);
-    }, 2000);
+            alert.style.opacity = '1';
+        }, 100);
 
+        // Wait for 3 seconds then fade out
+        setTimeout(() => {
+            alert.style.opacity = '0';
+            setTimeout(() => {
+                alert.remove();
+                resolve();
+            }, 300);
+        }, 3000);
+    });
+}
+
+// Handle confirm logout
+confirmBtn.addEventListener('click', async () => {
     modal.style.display = 'none';
+    
+    // Show alert and wait for it to complete
+    await showLogoutAlert();
+    
+    // After alert is done, redirect
+    window.location.href = '../homepage/index.html';
 });
 
 // Smooth scroll for navigation links
@@ -59,4 +75,30 @@ document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('active');
     }
+});
+
+// Profile dropdown functionality
+const profileBtn = document.querySelector('.profile-btn');
+const profileDropdown = document.querySelector('.profile-dropdown');
+
+profileBtn.addEventListener('mouseenter', () => {
+  profileDropdown.style.display = 'block';
+});
+
+profileBtn.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!profileDropdown.matches(':hover')) {
+      profileDropdown.style.display = 'none';
+    }
+  }, 100);
+});
+
+profileDropdown.addEventListener('mouseleave', () => {
+  profileDropdown.style.display = 'none';
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("login-btn").addEventListener("click", function() {
+        window.location.href = '../sign-in/index.html';
+    });
 });

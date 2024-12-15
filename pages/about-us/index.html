@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="styles" href="../../styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,11 +15,11 @@
             <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Pelita Harapan">
         </div>
         <div class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#dokter">Dokter</a>
-            <a href="#booking">Booking</a>
-            <a href="#artikel">Artikel</a>
+            <a href="../homepage/index.html" class="active">Home</a>
+            <a href="../about-us/index.html">About Us</a>
+            <a href="../dokter/index.html">Dokter</a>
+            <a href="../booking/index.html">Booking</a>
+            <a href="../artikel/index.html">Artikel</a>
             <a href="#kontak">Kontak</a>
         </div>
         <div class="nav-buttons">
@@ -26,10 +28,19 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="/profile" class="profile-icon">
-                <img src="../../Assets/profile_icon.svg" alt="Profile">
-            </a>
-            <button class="logout-btn" id="logout-btn">Log Out</button>
+
+            <div class="profile-menu">
+                <button class="profile-btn">
+                    <img src="../../Assets/profile_icon.svg" alt="Profile">
+                </button>
+                <div class="profile-dropdown">
+                  <a href="../profile/index.html" class="dropdown-item">Lihat Akun</a>
+                  <a href="../profile/edit-profile/index.html" class="dropdown-item">Edit Akun</a>
+                  <a href="../homepage/index.html" class="dropdown-item">Log Out</a>
+                </div>
+            </div>
+            
+            <button class="login-btn" id="login-btn">Log In</button>
         </div>
     </nav>
     <main>
@@ -70,7 +81,7 @@
             </div>
         </section>
     </main>
-            <footer>
+            <footer id="kontak">
                 <div class="footer-content">
                     <div class="footer-left">
                         <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">

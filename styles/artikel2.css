@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    background-color: rgb(249, 250, 251);
+    min-height: 100vh;
+  }
+
+/* Main Content */
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article-content {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.article-image {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 2rem;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article-text {
+    line-height: 1.6;
+}
+
+.article-text p {
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: justify;
+}
+
+.article-text h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+    color: #000;
+}
+
+.article-text ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-text ul li {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: normal;
+}
+
+.article-text ul li::marker {
+    color: black;
+}
+
+.article-text ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-text ol li {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.article-text li p {
+    margin-top: 0.75rem;
+    color: black;
+    font-weight: 400;
+}
+
+.article-text ol li ul {
+    margin-left: 1.5rem;
+}
+
+.article-text ol li ul li {
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .article-content {
+        padding: 3rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .article-content {
+        padding: 4rem;
+    }
+
+    .article-text {
+        font-size: 1.1rem;
+    }
+}

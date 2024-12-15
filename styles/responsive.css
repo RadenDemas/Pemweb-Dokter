@@ -1,0 +1,122 @@
+@media (max-width: 1024px) {
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .contact-item {
+        justify-content: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-footer {
+        margin-left: 10rem;
+    }
+
+    .footer-left p {
+        margin-left: 9rem;
+        word-spacing: 0.5rem;
+    }
+
+    .footer-right {
+        margin-top: 1rem;
+    }
+
+    .footer-right h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-left: 7.5rem;
+    }
+}

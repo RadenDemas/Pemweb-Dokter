@@ -1,4 +1,3 @@
-// DOM Elements
 const hamburger = document.getElementById('hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 const logoutBtn = document.getElementById('logout-btn');
@@ -16,13 +15,13 @@ const articles = [
         title: 'Potret Diabetes di RI dari Tahun ke Tahun, Angkanya Terus Naik',
         date: '18 November 2024',
         readTime: '3 menit waktu baca',
-        image: 'https://example.com/diabetes.jpg'
+        image: '../../Assets/artikel diabetes.jpg'
     },
     {
         title: 'Telinga Sakit Bagian Dalam? Kenali Penyebab dan Penanganannya!',
         date: '15 November 2024',
         readTime: '5 menit waktu baca',
-        image: 'https://example.com/ear.jpg'
+        image: '../../Assets/artikel sakit telinga.jpg'
     },
     // Add more articles as needed
 ];
