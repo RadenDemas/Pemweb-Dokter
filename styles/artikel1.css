@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    background-color: rgb(249, 250, 251);
+    min-height: 100vh;
+  }
+
+/* Main Content */
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article-content {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.article-image {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 2rem;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article-text {
+    line-height: 1.6;
+}
+
+.article-text p {
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .article-content {
+        padding: 3rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .article-content {
+        padding: 4rem;
+    }
+
+    .article-text {
+        font-size: 1.1rem;
+    }
+}
