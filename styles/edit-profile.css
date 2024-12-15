@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edit-profile-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-profile-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.profile-section {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 200px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.choose-photo {
+    background-color: #8AB9D5;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 100px;
+}
+
+.choose-photo:hover {
+    background-color: #6a9ff5;
+}
+
+.profile-form {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    transition: border-color 0.3s;
+}
+
+.form-input:hover {
+    border: 1px solid black;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.form-input.error {
+    border: 1px solid red;
+}
+
+.form-input.disabled {
+    background-color: #D3D6DB;
+    border: none;
+    cursor: not-allowed;
+}
+
+.form-input.disabled:hover {
+    border: none;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.password-input, .date-input {
+    position: relative;
+}
+
+.password-input i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.update-btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    background-color: #8AB9D5;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+.update-btn:hover {
+    background-color: #6a9ff5;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .profile-section {
+        gap: 2rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .edit-profile-container {
+        margin: 1rem auto;
+    }
+
+    .edit-profile-container h1 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .profile-image-section {
+        margin-bottom: 1rem;
+    }
+
+    .profile-form {
+        width: 100%;
+    }
+
+    .form-group label {
+        font-size: 0.875rem;
+    }
+
+    .form-input {
+        padding: 0.625rem;
+    }
+
+    .update-btn {
+        width: 100%;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+}

@@ -22,6 +22,10 @@
     text-align: center;
 }
 
+.modal-content p {
+    color: #4698CB;
+}
+
 .modal-buttons {
     display: flex;
     justify-content: center;
@@ -38,16 +42,17 @@
 }
 
 #cancelLogout {
-    background-color: #e5e7eb;
+    background-color: #4698CB;
+    color: white;
 }
 
 #confirmLogout {
-    background-color: #8AB9D5;
+    background-color: #4698CB;
     color: white;
 }
 
 #cancelLogout:hover {
-    background-color: #d1d5db;
+    background-color: #3b82f6;
 }
 
 #confirmLogout:hover {
@@ -60,12 +65,13 @@
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #08ae2c;
+    background-color: #4698CB;
     color: white;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     z-index: 1000;
     text-align: center;
+    font-weight: 600;
 }
 
 .alert.active {
