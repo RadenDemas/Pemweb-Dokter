@@ -1,13 +1,9 @@
 <?php
-    include "../../scripts/php/db.php";
-    session_start();
-    if(!isset($_SESSION['login'])){
-        $_SESSION['login'] = false;
-    }
-    if(isset($_SESSION['ubah'])){
-        $nama = $_POST['nama'];
-        $email = $_POST['email'];
-   }
+include "../scripts/php/db.php";
+session_start();
+if(!isset($_SESSION['login'])){
+    $_SESSION['login'] = false;
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,8 +11,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Details</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>UBAH PROFILE PENGGUNA</title>
+    <link rel="stylesheet" href="../pages/profile/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -52,18 +48,17 @@
         </div>
         <form class="profile-form">
             <div class="form-group">
-                <label id="nama">Nama</label>
-                <input type="text" id="nama" name="nama" placeholder="Nama Pengguna" value="<?php echo $_SESSION['nama'];?>">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Pengguna" value="<?php echo $_SESSION['nama'];?>" disabled>
             </div>
             <div class="form-group">
-                <label id="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Alamat Email" value="<?php echo $_SESSION['email'];?>">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Alamat Email" value="<?php echo $_SESSION['email'];?>" disabled>
             </div>
             <div class="form-group">
-                <label id="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Alamat Email" value="<?php echo $_SESSION['email'];?>">
+                <label for="nohp">Nomor Telepon</label>
+                <input type="text" id="nohp" name="nohp" placeholder="Nomor Telepon Pengguna" value="<?php echo $_SESSION['no_hp'];?>" disabled>
             </div>
-            <button type="button" class="ubah-akun" name="ubah">Ubah akun</button>
         </form>
     </div>
 </main>
@@ -95,6 +90,6 @@
         </div>
     </div>
 </footer>
-<script src="script.js"></script>
+<script src="../pages/profile/script.js"></script>
 </body>
 </html>

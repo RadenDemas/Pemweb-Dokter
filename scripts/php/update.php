@@ -15,7 +15,7 @@
         gender = '$gender',
         ttl = '$tt',
         password = '$password'
-        WHERE id = $id";
+        WHERE id = $id_dokter";
         mysqli_query($conn,$query);
     }    
 ?>
