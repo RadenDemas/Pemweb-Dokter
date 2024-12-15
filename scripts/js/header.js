@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loginButton.addEventListener('click', function() {
         // Mengarahkan ke halaman lain
         window.location.href = '../sign-in/index.html';
+        window.location.href = '../../pages/sign-in/index.html';
     });
 
     // Hamburger menu
