@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Dokter</title>
+    <title>Booking</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../styles/booking.css">
     <link rel="stylesheet" href="../../styles/header.css">
     <link rel="stylesheet" href="../../styles/footer.css">
-    <script src="../../scripts/js/booking.js" defer></script>
+    <link rel="stylesheet" href="../../styles/responsive.css">
+    <link rel="stylesheet" href="../../styles/alert-modal.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Pelita Harapan">
-        </div>
-        
-        <div class="nav-links">
-            <a href="../homepage/index.html">Home</a>
-            <a href="../about-us/index.html">About Us</a>
-            <a href="../dokter/index.html">Dokter</a>
-            <a href="../booking/index.html">Booking</a>
-            <a href="../artikel/index.html">Artikel</a>
-            <a href="#hubungi-kami">Kontak</a>
-        </div>
-        <div class="nav-buttons">
-            <button class="hamburger" id="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="../profile/index.html" class="profile-icon">
-                <img src="../../Assets/profile_icon.svg" alt="Profile">
-            </a>
-            <button class="logout-btn" id="logout-btn">Log Out</button>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../homepage/index.html" class="logo">
+                    <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo">
+                </a>
+                <div class="nav-links">
+                    <a href="../homepage/index.html">Home</a>
+                    <a href="../about-us/index.html">About Us</a>
+                    <a href="../dokter/index.html">Dokter</a>
+                    <a href="../booking/index.html">Booking</a>
+                    <a href="../artikel/index.html" class="active">Artikel</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+                <div class="nav-buttons">
+                    <button class="login-btn">Log In</button>
+                    <div class="profile-btn">
+                        <img src="../../Assets/icon-profile.svg" alt="Profile">
+                        <div class="dropdown-menu">
+                            <a href="../profile/index.html">Lihat Akun</a>
+                            <a href="../profile/edit-profile/index.html">Edit Akun</a>
+                            <a href="#" id="logout-btn">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <h1>Booking Dokter di Pelita Harapan Clinic</h1>
@@ -140,7 +150,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="kontak">
         <div class="footer-content">
             <div class="footer-left">
                 <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo-footer">
@@ -150,7 +160,7 @@
                 <p>Jakarta</p>
             </div>
             <div class="footer-right">
-                <h3 id="hubungi-kami">Hubungi Kami</h3>
+                <h3>Hubungi Kami</h3>
                 <div class="contact-details">
                     <div class="contact-item">
                         <img src="../../Assets/logo ambulan.svg" alt="ambulan">
@@ -179,23 +189,28 @@
                             <p>infohospital@pelitaharapan.co.id</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="modal" id="logout-modal">
+    <div id="logoutModal" class="modal">
         <div class="modal-content">
             <p>Yakin ingin Log out dari akun ini?</p>
             <div class="modal-buttons">
-                <button class="cancel-btn">Batal</button>
-                <a href="../homepage/index.html" class="confirm-btn">Iya</a>
+                <button id="cancelLogout">Batal</button>
+                <button id="confirmLogout">Iya</button>
             </div>
         </div>
     </div>
 
-    <div class="alert" id="alert">Anda sudah berhasil Log out</div>
+    <div id="logoutAlert" class="alert">
+        <p>Anda sudah berhasil Log out</p>
+        <div class="countdown">3</div>
+    </div>
 
+    <script src="../../scripts/js/header.js"></script>
+    <script src="../../scripts/js/alert-modal.js"></script>
+    <script src="../../scripts/js/booking.js"></script>
 </body>
 </html>
