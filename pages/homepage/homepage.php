@@ -30,12 +30,12 @@
         </div>
 
         <div class="nav-menu">
-            <a href="homepage.php" class="nav-link">Home</a>
+            <a href="../homepage/homepage.php" class="nav-link">Home</a>
             <a href="../about-us/about.php" class="nav-link">About Us</a>
             <a href="../dokter/dokter.php" class="nav-link">Dokter</a>
             <a href="../booking/booking.php" class="nav-link">Booking</a>
             <a href="../artikel/artikel.php" class="nav-link">Artikel</a>
-            <a href="../kontak/kontak.php" class="nav-link">Kontak</a>
+            <a href="#footer" class="nav-link">Kontak</a>
 
             <?php if($_SESSION['login'] == true): ?>
             <div class="profile-menu">
@@ -60,20 +60,20 @@
             <div class="hero-content">
                 <h1>SELAMAT DATANG DI KLINIK PELITA HARAPAN</h1>
                 <p>"Terang Harapan Menuju Sehat"</p>
-                <button class="info-btn"><a href="../about-us/about.php">Info Selengkapnya</a></button>
+                <button class="info-btn"><a href="#about">Info Selengkapnya</a></button>
             </div>
             <img src="../../Assets/3 dokter.png" alt="Doctors">
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2>ABOUT US</h2>
         <div class="about-container">
             <img src="../../Assets/rumah sakit.jpg" alt="Gambar Klinik">
             <div class="about-content">
                 <p>Klinik Pelita Harapan hadir untuk menjadi pelita harapan bagi kesehatan anda. Kami berkomitmen untuk memberikan layanan kesehatan kelas dunia dengan mengutamakan kenyamanan, kepercayaan, dan kepuasan pasien.<br>
                     Sebagai penyedia layanan kesehatan terdepan, kami menggabungkan teknologi modern dengan pendekatan yang penuh kasih. Tim medis kami yang profesional siap melayani anda dengan solusi kesehatan yang menyeluruh, mulai dari diagnosis akurat hingga perawatan yang dipersonalisasi sesuai kebutuhan Anda.</p>
-                <button class="read-more"><a>Baca Selengkapnya ...</a></button>
+                <button class="read-more"><a href="../about-us/about.php">Baca Selengkapnya ...</a></button>
             </div>
         </div>
     </section>
@@ -121,10 +121,9 @@
                 </div>
             <?php endwhile;?>
             </div>
-        </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-container">
             <div class="footer-info">
                 <img src="../../Assets/logo rumah sakit.svg" alt="Klinik Logo">
