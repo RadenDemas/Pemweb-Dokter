@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.articles {
+    padding: 5rem 1.5rem;
+}
+
+.articles h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.articles > p {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.articles-container {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.article-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-card img {
+    width: 9.50rem;
+    height: 9.00rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.article-content {
+    flex: 1;
+}
+
+.article-content h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.article-content p {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.article-card button {
+    padding: 0.5rem;
+    background-color: #8AB9D5;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.article-card button:hover {
+    background-color: #3b82f6;
+}
+
+.article-card i {
+    font-size: 2.5rem;
+    color: black;
+}
