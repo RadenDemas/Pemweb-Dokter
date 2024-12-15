@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../Admin/styles/sign in.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo animate-left">
+            <img src="../Assets/dokter animasi sign in.png" alt="Doctor" class="doctor-image animate-left">
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <h1>SIGN IN</h1>
+                <form id="signinForm" novalidate>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Alamat Email" required>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" placeholder="Password" maxlength="15" required>
+                            <i class="far fa-eye-slash toggle-password"></i>
+                        </div>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <button type="submit" class="signin-btn" id="signInButton">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../Admin/scripts/sign in.js"></script>
+</body>
+</html>

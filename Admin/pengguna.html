@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengguna - Klinik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Admin/styles/pengguna.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="../Assets/logo rumah sakit.svg" alt="Klinik Logo" class="logo">
+        <a href="../Admin/list-booking.html" class="nav-button active">LIST BOOKING</a>
+        <a href="../Admin/pengguna.html" class="nav-button">PENGGUNA</a>
+        <a href="../Admin/dokter-admin.html" class="nav-button">DOKTER</a>
+        <a href="../Admin/sign-in.html" class="nav-button logout">LOG OUT</a>
+    </div>
+
+    <div class="content-area">
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Pengguna</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lala</td>
+                        <td>
+                            <a href="../Admin/edit-pengguna.html" class="edit-btn">
+                                <img src="../Assets/pulpen.png" alt="Edit">
+                            </a>
+                        </td>
+                        <td>
+                            <button class="delete-btn" onclick="deleteUser('1')">
+                                <img src="../Assets/tong sampah.png" alt="Delete">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../Admin/scripts/pengguna.js"></script>
+</body>
+</html>

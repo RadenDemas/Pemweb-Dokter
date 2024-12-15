@@ -1,0 +1,40 @@
+@import '../styles/list-booking.css';
+
+/* Additional styles for Dokter Admin page */
+.edit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #FFD900;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn img, .delete-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+th:nth-child(2), th:nth-child(3) {
+    width: 100px;
+    text-align: center;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
