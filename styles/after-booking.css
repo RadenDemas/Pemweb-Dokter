@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    background-color: rgb(249, 250, 251);
+    min-height: 100vh;
+  }
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #F8F5F5;
+}
+
+.booking-container {
+    background: #DDE5EC;
+    padding: 2rem;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.booking-container h1 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.queue-number-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.queue-number {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.booking-details {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 35px;
+    margin-bottom: 2rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-weight: 500;
+}
+
+.booking-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.print-btn, .home-btn {
+    width: 50%;
+    max-width: 185px;
+    background-color: #8ab9d5;
+    border: none;
+    padding: 10px 23px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.home-btn {
+  font-size: small;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .booking-container {
+        margin: 1rem;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        text-align: left;
+        gap: 0.5rem;
+    }
+}
+
+@media print {
+    nav, footer, .booking-buttons {
+        display: none;
+    }
+
+    .booking-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+}
